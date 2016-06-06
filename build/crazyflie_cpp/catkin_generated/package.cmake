@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "crazyflie_cpp")
-set(crazyflie_cpp_MAINTAINER "Wolfgang Hoenig <whoenig@usc.edu>")
-set(crazyflie_cpp_DEPRECATED "")
-set(crazyflie_cpp_VERSION "0.0.1")
-set(crazyflie_cpp_BUILD_DEPENDS "libusb-1.0-dev")
-set(crazyflie_cpp_RUN_DEPENDS "libusb-1.0-dev")
-set(crazyflie_cpp_BUILDTOOL_DEPENDS "catkin")

@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "lab3")
-set(lab3_MAINTAINER "yifang <yifang@todo.todo>")
-set(lab3_DEPRECATED "")
-set(lab3_VERSION "0.0.0")
-set(lab3_BUILD_DEPENDS "geometry_msgs" "roscpp" "rospy" "std_msgs")
-set(lab3_RUN_DEPENDS "geometry_msgs" "roscpp" "rospy" "std_msgs")
-set(lab3_BUILDTOOL_DEPENDS "catkin")

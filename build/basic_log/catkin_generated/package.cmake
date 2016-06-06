@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "basic_log")
-set(basic_log_MAINTAINER "yifang <yifang@todo.todo>")
-set(basic_log_DEPRECATED "")
-set(basic_log_VERSION "0.0.0")
-set(basic_log_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "tf")
-set(basic_log_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "tf")
-set(basic_log_BUILDTOOL_DEPENDS "catkin")

@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "camera")
-set(camera_MAINTAINER "meit <meit@todo.todo>")
-set(camera_DEPRECATED "")
-set(camera_VERSION "0.0.0")
-set(camera_BUILD_DEPENDS "gazebo_msgs" "roscpp")
-set(camera_RUN_DEPENDS "gazebo_msgs" "roscpp")
-set(camera_BUILDTOOL_DEPENDS "catkin")

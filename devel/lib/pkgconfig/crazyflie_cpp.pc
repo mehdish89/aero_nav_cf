@@ -1,8 +1,0 @@
-prefix=/home/meit/crazyflie_ws/devel
-
-Name: crazyflie_cpp
-Description: Description of crazyflie_cpp
-Version: 0.0.1
-Cflags: -I/home/meit/crazyflie_ws/src/crazyflie_cpp/include
-Libs: -L/home/meit/crazyflie_ws/devel/lib -lcrazyflie_cpp
-Requires: 

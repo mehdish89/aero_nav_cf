@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "crazyflie_tools")
-set(crazyflie_tools_MAINTAINER "Wolfgang Hoenig <whoenig@usc.edu>")
-set(crazyflie_tools_DEPRECATED "")
-set(crazyflie_tools_VERSION "0.0.1")
-set(crazyflie_tools_BUILD_DEPENDS "crazyflie_cpp")
-set(crazyflie_tools_RUN_DEPENDS "crazyflie_cpp")
-set(crazyflie_tools_BUILDTOOL_DEPENDS "catkin")

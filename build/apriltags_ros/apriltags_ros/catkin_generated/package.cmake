@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "apriltags_ros")
-set(apriltags_ros_MAINTAINER "Mitchell Wills <mwills@wpi.edu>")
-set(apriltags_ros_DEPRECATED "")
-set(apriltags_ros_VERSION "0.1.1")
-set(apriltags_ros_BUILD_DEPENDS "apriltags" "image_transport" "roscpp" "sensor_msgs" "geometry_msgs" "tf" "cv_bridge" "message_generation" "nodelet" "std_msgs" "cmake_modules")
-set(apriltags_ros_RUN_DEPENDS "apriltags" "image_transport" "roscpp" "sensor_msgs" "geometry_msgs" "tf" "cv_bridge" "message_runtime" "nodelet" "std_msgs")
-set(apriltags_ros_BUILDTOOL_DEPENDS "catkin")

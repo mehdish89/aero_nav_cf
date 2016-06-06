@@ -1,8 +1,0 @@
-prefix=/home/meit/crazyflie_ws/devel
-
-Name: basic_log
-Description: Description of basic_log
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/meit/crazyflie_ws/devel/lib 
-Requires: 
