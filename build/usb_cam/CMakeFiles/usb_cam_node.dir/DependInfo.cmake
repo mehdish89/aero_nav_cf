@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yifang/catkin_ws_test/src/usb_cam/nodes/usb_cam_node.cpp" "/home/yifang/catkin_ws_test/build/usb_cam/CMakeFiles/usb_cam_node.dir/nodes/usb_cam_node.cpp.o"
+  "/home/yifang/crazy_rl/src/usb_cam/nodes/usb_cam_node.cpp" "/home/yifang/crazy_rl/build/usb_cam/CMakeFiles/usb_cam_node.dir/nodes/usb_cam_node.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,12 +17,12 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yifang/catkin_ws_test/build/usb_cam/CMakeFiles/usb_cam.dir/DependInfo.cmake"
+  "/home/yifang/crazy_rl/build/usb_cam/CMakeFiles/usb_cam.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/yifang/catkin_ws_test/src/usb_cam/include"
+  "/home/yifang/crazy_rl/src/usb_cam/include"
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

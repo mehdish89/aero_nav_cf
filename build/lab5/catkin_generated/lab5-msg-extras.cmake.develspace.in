@@ -1,2 +1,0 @@
-set(lab5_MESSAGE_FILES "")
-set(lab5_SERVICE_FILES "/home/yifang/catkin_ws_test/src/lab5/srv/MoveBot.srv;/home/yifang/catkin_ws_test/src/lab5/srv/Position.srv")

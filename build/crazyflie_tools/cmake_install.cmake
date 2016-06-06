@@ -1,8 +1,8 @@
-# Install script for directory: /home/yifang/catkin_ws_test/src/crazyflie_tools
+# Install script for directory: /home/yifang/crazy_rl/src/crazyflie_tools
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/yifang/catkin_ws_test/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/yifang/crazy_rl/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yifang/catkin_ws_test/build/crazyflie_tools/catkin_generated/installspace/crazyflie_tools.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yifang/crazy_rl/build/crazyflie_tools/catkin_generated/installspace/crazyflie_tools.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/crazyflie_tools/cmake" TYPE FILE FILES
-    "/home/yifang/catkin_ws_test/build/crazyflie_tools/catkin_generated/installspace/crazyflie_toolsConfig.cmake"
-    "/home/yifang/catkin_ws_test/build/crazyflie_tools/catkin_generated/installspace/crazyflie_toolsConfig-version.cmake"
+    "/home/yifang/crazy_rl/build/crazyflie_tools/catkin_generated/installspace/crazyflie_toolsConfig.cmake"
+    "/home/yifang/crazy_rl/build/crazyflie_tools/catkin_generated/installspace/crazyflie_toolsConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/crazyflie_tools" TYPE FILE FILES "/home/yifang/catkin_ws_test/src/crazyflie_tools/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/crazyflie_tools" TYPE FILE FILES "/home/yifang/crazy_rl/src/crazyflie_tools/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

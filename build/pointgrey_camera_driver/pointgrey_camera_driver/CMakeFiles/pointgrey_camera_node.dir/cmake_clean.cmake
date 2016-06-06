@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/pointgrey_camera_node.dir/src/node.cpp.o"
-  "/home/yifang/catkin_ws_test/devel/lib/pointgrey_camera_driver/camera_node.pdb"
-  "/home/yifang/catkin_ws_test/devel/lib/pointgrey_camera_driver/camera_node"
+  "/home/yifang/crazy_rl/devel/lib/pointgrey_camera_driver/camera_node.pdb"
+  "/home/yifang/crazy_rl/devel/lib/pointgrey_camera_driver/camera_node"
 )
 
 # Per-language clean rules from dependency scanning.

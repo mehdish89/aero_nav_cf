@@ -1,8 +1,8 @@
-prefix=/home/yifang/catkin_ws_test/install
+prefix=/home/yifang/crazy_rl/install
 
 Name: crazyflie_driver
 Description: Description of crazyflie_driver
 Version: 0.0.1
-Cflags: -I/home/yifang/catkin_ws_test/install/include
-Libs: -L/home/yifang/catkin_ws_test/install/lib 
+Cflags: -I/home/yifang/crazy_rl/install/include
+Libs: -L/home/yifang/crazy_rl/install/lib 
 Requires: message_runtime std_msgs tf crazyflie_cpp

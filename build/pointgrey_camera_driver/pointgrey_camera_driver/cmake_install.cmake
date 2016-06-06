@@ -1,8 +1,8 @@
-# Install script for directory: /home/yifang/catkin_ws_test/src/pointgrey_camera_driver/pointgrey_camera_driver
+# Install script for directory: /home/yifang/crazy_rl/src/pointgrey_camera_driver/pointgrey_camera_driver
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/yifang/catkin_ws_test/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/yifang/crazy_rl/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,34 +33,34 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pointgrey_camera_driver" TYPE FILE FILES "/home/yifang/catkin_ws_test/devel/include/pointgrey_camera_driver/PointGreyConfig.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pointgrey_camera_driver" TYPE FILE FILES "/home/yifang/crazy_rl/devel/include/pointgrey_camera_driver/PointGreyConfig.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pointgrey_camera_driver" TYPE FILE FILES "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/pointgrey_camera_driver/__init__.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pointgrey_camera_driver" TYPE FILE FILES "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/pointgrey_camera_driver/__init__.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/pointgrey_camera_driver/cfg")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/pointgrey_camera_driver/cfg")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pointgrey_camera_driver" TYPE DIRECTORY FILES "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/pointgrey_camera_driver/cfg")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pointgrey_camera_driver" TYPE DIRECTORY FILES "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/pointgrey_camera_driver/cfg")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yifang/catkin_ws_test/build/pointgrey_camera_driver/pointgrey_camera_driver/catkin_generated/installspace/pointgrey_camera_driver.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yifang/crazy_rl/build/pointgrey_camera_driver/pointgrey_camera_driver/catkin_generated/installspace/pointgrey_camera_driver.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pointgrey_camera_driver/cmake" TYPE FILE FILES
-    "/home/yifang/catkin_ws_test/build/pointgrey_camera_driver/pointgrey_camera_driver/catkin_generated/installspace/pointgrey_camera_driverConfig.cmake"
-    "/home/yifang/catkin_ws_test/build/pointgrey_camera_driver/pointgrey_camera_driver/catkin_generated/installspace/pointgrey_camera_driverConfig-version.cmake"
+    "/home/yifang/crazy_rl/build/pointgrey_camera_driver/pointgrey_camera_driver/catkin_generated/installspace/pointgrey_camera_driverConfig.cmake"
+    "/home/yifang/crazy_rl/build/pointgrey_camera_driver/pointgrey_camera_driver/catkin_generated/installspace/pointgrey_camera_driverConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pointgrey_camera_driver" TYPE FILE FILES "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/pointgrey_camera_driver/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pointgrey_camera_driver" TYPE FILE FILES "/home/yifang/crazy_rl/src/pointgrey_camera_driver/pointgrey_camera_driver/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -70,7 +70,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyCamera.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/yifang/catkin_ws_test/devel/lib/libPointGreyCamera.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/yifang/crazy_rl/devel/lib/libPointGreyCamera.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyCamera.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyCamera.so")
     FILE(RPATH_REMOVE
@@ -88,7 +88,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyCameraNodelet.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/yifang/catkin_ws_test/devel/lib/libPointGreyCameraNodelet.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/yifang/crazy_rl/devel/lib/libPointGreyCameraNodelet.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyCameraNodelet.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyCameraNodelet.so")
     FILE(RPATH_REMOVE
@@ -106,7 +106,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyStereoCameraNodelet.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/yifang/catkin_ws_test/devel/lib/libPointGreyStereoCameraNodelet.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/yifang/crazy_rl/devel/lib/libPointGreyStereoCameraNodelet.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyStereoCameraNodelet.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPointGreyStereoCameraNodelet.so")
     FILE(RPATH_REMOVE
@@ -124,7 +124,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/camera_node"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver" TYPE EXECUTABLE FILES "/home/yifang/catkin_ws_test/devel/lib/pointgrey_camera_driver/camera_node")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver" TYPE EXECUTABLE FILES "/home/yifang/crazy_rl/devel/lib/pointgrey_camera_driver/camera_node")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/camera_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/camera_node")
     FILE(RPATH_REMOVE
@@ -142,7 +142,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/stereo_node"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver" TYPE EXECUTABLE FILES "/home/yifang/catkin_ws_test/devel/lib/pointgrey_camera_driver/stereo_node")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver" TYPE EXECUTABLE FILES "/home/yifang/crazy_rl/devel/lib/pointgrey_camera_driver/stereo_node")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/stereo_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/stereo_node")
     FILE(RPATH_REMOVE
@@ -160,7 +160,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/list_cameras"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver" TYPE EXECUTABLE FILES "/home/yifang/catkin_ws_test/devel/lib/pointgrey_camera_driver/list_cameras")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver" TYPE EXECUTABLE FILES "/home/yifang/crazy_rl/devel/lib/pointgrey_camera_driver/list_cameras")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/list_cameras" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pointgrey_camera_driver/list_cameras")
     FILE(RPATH_REMOVE
@@ -176,10 +176,10 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pointgrey_camera_driver" TYPE FILE FILES "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/pointgrey_camera_driver/nodelet_plugins.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pointgrey_camera_driver" TYPE FILE FILES "/home/yifang/crazy_rl/src/pointgrey_camera_driver/pointgrey_camera_driver/nodelet_plugins.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pointgrey_camera_driver" TYPE DIRECTORY FILES "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/pointgrey_camera_driver/launch")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pointgrey_camera_driver" TYPE DIRECTORY FILES "/home/yifang/crazy_rl/src/pointgrey_camera_driver/pointgrey_camera_driver/launch")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

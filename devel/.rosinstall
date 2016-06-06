@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/yifang/catkin_ws_test/devel/setup.sh
+    local-name: /home/yifang/crazy_rl/devel/setup.sh

@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/PointGreyCameraNodelet.dir/src/nodelet.cpp.o"
-  "/home/yifang/catkin_ws_test/devel/lib/libPointGreyCameraNodelet.pdb"
-  "/home/yifang/catkin_ws_test/devel/lib/libPointGreyCameraNodelet.so"
+  "/home/yifang/crazy_rl/devel/lib/libPointGreyCameraNodelet.pdb"
+  "/home/yifang/crazy_rl/devel/lib/libPointGreyCameraNodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/PointGreyCamera.dir/src/PointGreyCamera.cpp.o"
-  "/home/yifang/catkin_ws_test/devel/lib/libPointGreyCamera.pdb"
-  "/home/yifang/catkin_ws_test/devel/lib/libPointGreyCamera.so"
+  "/home/yifang/crazy_rl/devel/lib/libPointGreyCamera.pdb"
+  "/home/yifang/crazy_rl/devel/lib/libPointGreyCamera.so"
 )
 
 # Per-language clean rules from dependency scanning.

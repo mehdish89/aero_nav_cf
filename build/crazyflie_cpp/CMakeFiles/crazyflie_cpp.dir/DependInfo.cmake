@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyflie.cpp" "/home/yifang/catkin_ws_test/build/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o"
-  "/home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyradio.cpp" "/home/yifang/catkin_ws_test/build/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o"
+  "/home/yifang/crazy_rl/src/crazyflie_cpp/src/Crazyflie.cpp" "/home/yifang/crazy_rl/build/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o"
+  "/home/yifang/crazy_rl/src/crazyflie_cpp/src/Crazyradio.cpp" "/home/yifang/crazy_rl/build/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/yifang/catkin_ws_test/src/crazyflie_cpp/include/crazyflie_cpp"
+  "/home/yifang/crazy_rl/src/crazyflie_cpp/include/crazyflie_cpp"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/src/crazyflie_add.cpp" "/home/yifang/catkin_ws_test/build/crazyflie_driver/CMakeFiles/crazyflie_add.dir/src/crazyflie_add.cpp.o"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/src/crazyflie_add.cpp" "/home/yifang/crazy_rl/build/crazyflie_driver/CMakeFiles/crazyflie_add.dir/src/crazyflie_add.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,13 +17,13 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yifang/catkin_ws_test/build/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/DependInfo.cmake"
+  "/home/yifang/crazy_rl/build/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/yifang/catkin_ws_test/devel/include"
-  "/home/yifang/catkin_ws_test/src/crazyflie_cpp/include"
+  "/home/yifang/crazy_rl/devel/include"
+  "/home/yifang/crazy_rl/src/crazyflie_cpp/include"
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

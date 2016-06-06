@@ -2,7 +2,7 @@
 
 message(STATUS "crazyflie_driver: 2 messages, 2 services")
 
-set(MSG_I_FLAGS "-Icrazyflie_driver:/home/yifang/catkin_ws_test/src/crazyflie_driver/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Icrazyflie_driver:/home/yifang/crazy_rl/src/crazyflie_driver/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -15,24 +15,24 @@ add_custom_target(crazyflie_driver_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
 add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg" ""
 )
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
 add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv" "crazyflie_driver/LogBlock"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/yifang/crazy_rl/src/crazyflie_driver/srv/UpdateParams.srv" ""
 )
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
 add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/yifang/crazy_rl/src/crazyflie_driver/msg/GenericLogData.msg" ""
 )
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
 add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazyflie_driver" "/home/yifang/crazy_rl/src/crazyflie_driver/srv/AddCrazyflie.srv" "crazyflie_driver/LogBlock"
 )
 
 #
@@ -42,13 +42,13 @@ add_custom_target(_crazyflie_driver_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_msg_cpp(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/GenericLogData.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
@@ -56,15 +56,15 @@ _generate_msg_cpp(crazyflie_driver
 
 ### Generating Services
 _generate_srv_cpp(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/srv/UpdateParams.srv"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_cpp(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/srv/AddCrazyflie.srv"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazyflie_driver
 )
 
@@ -80,13 +80,13 @@ add_custom_target(crazyflie_driver_generate_messages_cpp
 add_dependencies(crazyflie_driver_generate_messages crazyflie_driver_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_cpp _crazyflie_driver_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -99,13 +99,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS crazyflie_driver_generate_messages_
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_msg_lisp(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/GenericLogData.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
@@ -113,15 +113,15 @@ _generate_msg_lisp(crazyflie_driver
 
 ### Generating Services
 _generate_srv_lisp(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/srv/UpdateParams.srv"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_lisp(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/srv/AddCrazyflie.srv"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazyflie_driver
 )
 
@@ -137,13 +137,13 @@ add_custom_target(crazyflie_driver_generate_messages_lisp
 add_dependencies(crazyflie_driver_generate_messages crazyflie_driver_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_lisp _crazyflie_driver_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -156,13 +156,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS crazyflie_driver_generate_messages_
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
 )
 _generate_msg_py(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/GenericLogData.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
@@ -170,15 +170,15 @@ _generate_msg_py(crazyflie_driver
 
 ### Generating Services
 _generate_srv_py(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/srv/UpdateParams.srv"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
 )
 _generate_srv_py(crazyflie_driver
-  "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv"
+  "/home/yifang/crazy_rl/src/crazyflie_driver/srv/AddCrazyflie.srv"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazyflie_driver
 )
 
@@ -194,13 +194,13 @@ add_custom_target(crazyflie_driver_generate_messages_py
 add_dependencies(crazyflie_driver_generate_messages crazyflie_driver_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/msg/GenericLogData.msg" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/crazyflie_driver/srv/AddCrazyflie.srv" NAME_WE)
 add_dependencies(crazyflie_driver_generate_messages_py _crazyflie_driver_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

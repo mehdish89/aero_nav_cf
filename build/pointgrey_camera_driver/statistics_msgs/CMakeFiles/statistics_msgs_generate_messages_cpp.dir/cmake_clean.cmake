@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/statistics_msgs_generate_messages_cpp"
-  "/home/yifang/catkin_ws_test/devel/include/statistics_msgs/Stats1D.h"
+  "/home/yifang/crazy_rl/devel/include/statistics_msgs/Stats1D.h"
 )
 
 # Per-language clean rules from dependency scanning.

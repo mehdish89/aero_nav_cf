@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "gazebo_msgs;roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "camera"
-PROJECT_SPACE_DIR = "/home/yifang/catkin_ws_test/devel"
+PROJECT_SPACE_DIR = "/home/yifang/crazy_rl/devel"
 PROJECT_VERSION = "0.0.0"

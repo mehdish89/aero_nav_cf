@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/yifang/catkin_ws_test/src/crazyflie_cpp/include/crazyflie_cpp/Crazyradio.h
+/home/yifang/crazy_rl/src/crazyflie_cpp/include/crazyflie_cpp/Crazyradio.h
 stdint.h
 -
 vector
 -
 
-/home/yifang/catkin_ws_test/src/crazyflie_tools/src/scan.cpp
+/home/yifang/crazy_rl/src/crazyflie_tools/src/scan.cpp
 iostream
 -
 boost/program_options.hpp

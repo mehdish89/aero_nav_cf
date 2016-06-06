@@ -2,7 +2,7 @@
 
 message(STATUS "image_exposure_msgs: 3 messages, 0 services")
 
-set(MSG_I_FLAGS "-Iimage_exposure_msgs:/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg;-Istatistics_msgs:/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iimage_exposure_msgs:/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg;-Istatistics_msgs:/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -15,19 +15,19 @@ add_custom_target(image_exposure_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" NAME_WE)
 add_custom_target(_image_exposure_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "image_exposure_msgs" "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "image_exposure_msgs" "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" NAME_WE)
 add_custom_target(_image_exposure_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "image_exposure_msgs" "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" "statistics_msgs/Stats1D"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "image_exposure_msgs" "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" "image_exposure_msgs/ImageExposureStatistics:statistics_msgs/Stats1D"
 )
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" NAME_WE)
 add_custom_target(_image_exposure_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "image_exposure_msgs" "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" "statistics_msgs/Stats1D:image_exposure_msgs/ImageExposureStatistics"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "image_exposure_msgs" "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" "statistics_msgs/Stats1D"
 )
 
 #
@@ -37,21 +37,21 @@ add_custom_target(_image_exposure_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/image_exposure_msgs
 )
 _generate_msg_cpp(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg;/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/image_exposure_msgs
 )
 _generate_msg_cpp(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg;/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/image_exposure_msgs
 )
 
@@ -69,11 +69,11 @@ add_custom_target(image_exposure_msgs_generate_messages_cpp
 add_dependencies(image_exposure_msgs_generate_messages image_exposure_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_cpp _image_exposure_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_cpp _image_exposure_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_cpp _image_exposure_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -86,21 +86,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS image_exposure_msgs_generate_messag
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/image_exposure_msgs
 )
 _generate_msg_lisp(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg;/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/image_exposure_msgs
 )
 _generate_msg_lisp(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg;/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/image_exposure_msgs
 )
 
@@ -118,11 +118,11 @@ add_custom_target(image_exposure_msgs_generate_messages_lisp
 add_dependencies(image_exposure_msgs_generate_messages image_exposure_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_lisp _image_exposure_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_lisp _image_exposure_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_lisp _image_exposure_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -135,21 +135,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS image_exposure_msgs_generate_messag
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/image_exposure_msgs
 )
 _generate_msg_py(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg;/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/image_exposure_msgs
 )
 _generate_msg_py(image_exposure_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
   "${MSG_I_FLAGS}"
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg;/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/image_exposure_msgs
 )
 
@@ -167,11 +167,11 @@ add_custom_target(image_exposure_msgs_generate_messages_py
 add_dependencies(image_exposure_msgs_generate_messages image_exposure_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_py _image_exposure_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_py _image_exposure_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg" NAME_WE)
 add_dependencies(image_exposure_msgs_generate_messages_py _image_exposure_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

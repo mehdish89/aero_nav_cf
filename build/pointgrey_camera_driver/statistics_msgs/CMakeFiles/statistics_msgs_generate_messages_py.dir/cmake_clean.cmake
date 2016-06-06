@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/statistics_msgs_generate_messages_py"
-  "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/statistics_msgs/msg/_Stats1D.py"
-  "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/statistics_msgs/msg/__init__.py"
+  "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/statistics_msgs/msg/_Stats1D.py"
+  "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/statistics_msgs/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

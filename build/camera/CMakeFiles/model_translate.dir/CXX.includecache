@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/yifang/catkin_ws_test/src/camera/src/model_translate.cpp
+/home/yifang/crazy_rl/src/camera/src/model_translate.cpp
 ros/ros.h
 -
 gazebo_msgs/ModelStates.h

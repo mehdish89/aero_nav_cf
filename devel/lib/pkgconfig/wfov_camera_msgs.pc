@@ -1,8 +1,8 @@
-prefix=/home/yifang/catkin_ws_test/devel
+prefix=/home/yifang/crazy_rl/devel
 
 Name: wfov_camera_msgs
 Description: Description of wfov_camera_msgs
 Version: 0.12.1
-Cflags: -I/home/yifang/catkin_ws_test/devel/include
-Libs: -L/home/yifang/catkin_ws_test/devel/lib 
+Cflags: -I/home/yifang/crazy_rl/devel/include
+Libs: -L/home/yifang/crazy_rl/devel/lib 
 Requires: sensor_msgs message_runtime

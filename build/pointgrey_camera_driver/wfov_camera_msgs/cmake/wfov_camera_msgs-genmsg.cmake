@@ -2,7 +2,7 @@
 
 message(STATUS "wfov_camera_msgs: 3 messages, 0 services")
 
-set(MSG_I_FLAGS "-Iwfov_camera_msgs:/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg;-Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iwfov_camera_msgs:/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg;-Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -15,19 +15,19 @@ add_custom_target(wfov_camera_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" NAME_WE)
 add_custom_target(_wfov_camera_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "wfov_camera_msgs" "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" "sensor_msgs/CompressedImage:sensor_msgs/CameraInfo:geometry_msgs/Vector3:std_msgs/Header:sensor_msgs/RegionOfInterest:geometry_msgs/Transform:geometry_msgs/TransformStamped:geometry_msgs/Quaternion"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "wfov_camera_msgs" "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" "sensor_msgs/CompressedImage:sensor_msgs/CameraInfo:geometry_msgs/Vector3:std_msgs/Header:sensor_msgs/RegionOfInterest:geometry_msgs/Transform:geometry_msgs/TransformStamped:geometry_msgs/Quaternion"
 )
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" NAME_WE)
 add_custom_target(_wfov_camera_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "wfov_camera_msgs" "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "wfov_camera_msgs" "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" "sensor_msgs/CameraInfo:std_msgs/Header:sensor_msgs/RegionOfInterest:sensor_msgs/Image"
 )
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" NAME_WE)
 add_custom_target(_wfov_camera_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "wfov_camera_msgs" "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" "sensor_msgs/CameraInfo:std_msgs/Header:sensor_msgs/RegionOfInterest:sensor_msgs/Image"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "wfov_camera_msgs" "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" "std_msgs/Header"
 )
 
 #
@@ -37,21 +37,21 @@ add_custom_target(_wfov_camera_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CompressedImage.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/TransformStamped.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/wfov_camera_msgs
 )
 _generate_msg_cpp(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/Image.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/wfov_camera_msgs
 )
 _generate_msg_cpp(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/wfov_camera_msgs
 )
 
@@ -69,11 +69,11 @@ add_custom_target(wfov_camera_msgs_generate_messages_cpp
 add_dependencies(wfov_camera_msgs_generate_messages wfov_camera_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_cpp _wfov_camera_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_cpp _wfov_camera_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_cpp _wfov_camera_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -86,21 +86,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS wfov_camera_msgs_generate_messages_
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CompressedImage.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/TransformStamped.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/wfov_camera_msgs
 )
 _generate_msg_lisp(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/Image.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/wfov_camera_msgs
 )
 _generate_msg_lisp(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/wfov_camera_msgs
 )
 
@@ -118,11 +118,11 @@ add_custom_target(wfov_camera_msgs_generate_messages_lisp
 add_dependencies(wfov_camera_msgs_generate_messages wfov_camera_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_lisp _wfov_camera_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_lisp _wfov_camera_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_lisp _wfov_camera_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -135,21 +135,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS wfov_camera_msgs_generate_messages_
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CompressedImage.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/TransformStamped.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/wfov_camera_msgs
 )
 _generate_msg_py(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/Image.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/wfov_camera_msgs
 )
 _generate_msg_py(wfov_camera_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/wfov_camera_msgs
 )
 
@@ -167,11 +167,11 @@ add_custom_target(wfov_camera_msgs_generate_messages_py
 add_dependencies(wfov_camera_msgs_generate_messages wfov_camera_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVCompressedImage.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_py _wfov_camera_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_py _wfov_camera_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVImage.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/wfov_camera_msgs/msg/WFOVTrigger.msg" NAME_WE)
 add_dependencies(wfov_camera_msgs_generate_messages_py _wfov_camera_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

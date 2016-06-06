@@ -2,7 +2,7 @@
 
 message(STATUS "statistics_msgs: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Istatistics_msgs:/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg")
+set(MSG_I_FLAGS "-Istatistics_msgs:/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -15,9 +15,9 @@ add_custom_target(statistics_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" NAME_WE)
 add_custom_target(_statistics_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "statistics_msgs" "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "statistics_msgs" "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" ""
 )
 
 #
@@ -27,7 +27,7 @@ add_custom_target(_statistics_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(statistics_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/statistics_msgs
@@ -47,7 +47,7 @@ add_custom_target(statistics_msgs_generate_messages_cpp
 add_dependencies(statistics_msgs_generate_messages statistics_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" NAME_WE)
 add_dependencies(statistics_msgs_generate_messages_cpp _statistics_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -60,7 +60,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS statistics_msgs_generate_messages_c
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(statistics_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/statistics_msgs
@@ -80,7 +80,7 @@ add_custom_target(statistics_msgs_generate_messages_lisp
 add_dependencies(statistics_msgs_generate_messages statistics_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" NAME_WE)
 add_dependencies(statistics_msgs_generate_messages_lisp _statistics_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -93,7 +93,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS statistics_msgs_generate_messages_l
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(statistics_msgs
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/statistics_msgs
@@ -113,7 +113,7 @@ add_custom_target(statistics_msgs_generate_messages_py
 add_dependencies(statistics_msgs_generate_messages statistics_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" NAME_WE)
+get_filename_component(_filename "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg" NAME_WE)
 add_dependencies(statistics_msgs_generate_messages_py _statistics_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

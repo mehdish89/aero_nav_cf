@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/scan.dir/src/scan.cpp.o"
-  "/home/yifang/catkin_ws_test/devel/lib/crazyflie_tools/scan.pdb"
-  "/home/yifang/catkin_ws_test/devel/lib/crazyflie_tools/scan"
+  "/home/yifang/crazy_rl/devel/lib/crazyflie_tools/scan.pdb"
+  "/home/yifang/crazy_rl/devel/lib/crazyflie_tools/scan"
 )
 
 # Per-language clean rules from dependency scanning.

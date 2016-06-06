@@ -1,2 +1,0 @@
-set(lab5_MESSAGE_FILES "")
-set(lab5_SERVICE_FILES "srv/MoveBot.srv;srv/Position.srv")

@@ -1,9 +1,9 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/image_exposure_msgs_generate_messages_py"
-  "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/image_exposure_msgs/msg/_ExposureSequence.py"
-  "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/image_exposure_msgs/msg/_ImageExposureStatistics.py"
-  "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/image_exposure_msgs/msg/_SequenceExposureStatistics.py"
-  "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/image_exposure_msgs/msg/__init__.py"
+  "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/image_exposure_msgs/msg/_ExposureSequence.py"
+  "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/image_exposure_msgs/msg/_SequenceExposureStatistics.py"
+  "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/image_exposure_msgs/msg/_ImageExposureStatistics.py"
+  "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/image_exposure_msgs/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

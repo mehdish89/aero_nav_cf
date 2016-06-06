@@ -1,8 +1,8 @@
-prefix=/home/yifang/catkin_ws_test/install
+prefix=/home/yifang/crazy_rl/install
 
 Name: usb_cam
 Description: Description of usb_cam
 Version: 0.3.4
-Cflags: -I/home/yifang/catkin_ws_test/install/include
-Libs: -L/home/yifang/catkin_ws_test/install/lib -lusb_cam
+Cflags: -I/home/yifang/crazy_rl/install/include
+Libs: -L/home/yifang/crazy_rl/install/lib -lusb_cam
 Requires: 

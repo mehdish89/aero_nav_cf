@@ -16,8 +16,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/yifang/catkin_ws_test/devel/include"
-  "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/pointgrey_camera_driver/include"
+  "/home/yifang/crazy_rl/devel/include"
+  "/home/yifang/crazy_rl/src/pointgrey_camera_driver/pointgrey_camera_driver/include"
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

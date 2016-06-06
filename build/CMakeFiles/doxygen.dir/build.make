@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yifang/catkin_ws_test/src
+CMAKE_SOURCE_DIR = /home/yifang/crazy_rl/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yifang/catkin_ws_test/build
+CMAKE_BINARY_DIR = /home/yifang/crazy_rl/build
 
 # Utility rule file for doxygen.
 
@@ -60,6 +60,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yifang/catkin_ws_test/src /home/yifang/catkin_ws_test/src /home/yifang/catkin_ws_test/build /home/yifang/catkin_ws_test/build /home/yifang/catkin_ws_test/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yifang/crazy_rl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yifang/crazy_rl/src /home/yifang/crazy_rl/src /home/yifang/crazy_rl/build /home/yifang/crazy_rl/build /home/yifang/crazy_rl/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

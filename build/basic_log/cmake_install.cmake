@@ -1,8 +1,8 @@
-# Install script for directory: /home/yifang/catkin_ws_test/src/basic_log
+# Install script for directory: /home/yifang/crazy_rl/src/basic_log
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/yifang/catkin_ws_test/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/yifang/crazy_rl/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yifang/catkin_ws_test/build/basic_log/catkin_generated/installspace/basic_log.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yifang/crazy_rl/build/basic_log/catkin_generated/installspace/basic_log.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basic_log/cmake" TYPE FILE FILES
-    "/home/yifang/catkin_ws_test/build/basic_log/catkin_generated/installspace/basic_logConfig.cmake"
-    "/home/yifang/catkin_ws_test/build/basic_log/catkin_generated/installspace/basic_logConfig-version.cmake"
+    "/home/yifang/crazy_rl/build/basic_log/catkin_generated/installspace/basic_logConfig.cmake"
+    "/home/yifang/crazy_rl/build/basic_log/catkin_generated/installspace/basic_logConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basic_log" TYPE FILE FILES "/home/yifang/catkin_ws_test/src/basic_log/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basic_log" TYPE FILE FILES "/home/yifang/crazy_rl/src/basic_log/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

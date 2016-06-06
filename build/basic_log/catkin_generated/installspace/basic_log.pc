@@ -1,8 +1,8 @@
-prefix=/home/yifang/catkin_ws_test/install
+prefix=/home/yifang/crazy_rl/install
 
 Name: basic_log
 Description: Description of basic_log
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/yifang/catkin_ws_test/install/lib 
+Libs: -L/home/yifang/crazy_rl/install/lib 
 Requires: 

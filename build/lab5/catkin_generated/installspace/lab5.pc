@@ -1,8 +1,0 @@
-prefix=/home/yifang/catkin_ws_test/install
-
-Name: lab5
-Description: Description of lab5
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/yifang/catkin_ws_test/install/lib 
-Requires: 

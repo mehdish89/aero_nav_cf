@@ -1,8 +1,8 @@
-# Install script for directory: /home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs
+# Install script for directory: /home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/yifang/catkin_ws_test/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/yifang/crazy_rl/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,45 +33,45 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs/msg" TYPE FILE FILES "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs/msg" TYPE FILE FILES "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/msg/Stats1D.msg")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs/cmake" TYPE FILE FILES "/home/yifang/catkin_ws_test/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgs-msg-paths.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs/cmake" TYPE FILE FILES "/home/yifang/crazy_rl/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgs-msg-paths.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/yifang/catkin_ws_test/devel/include/statistics_msgs")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/yifang/crazy_rl/devel/include/statistics_msgs")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/yifang/catkin_ws_test/devel/share/common-lisp/ros/statistics_msgs")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/yifang/crazy_rl/devel/share/common-lisp/ros/statistics_msgs")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/statistics_msgs")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/statistics_msgs")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/yifang/catkin_ws_test/devel/lib/python2.7/dist-packages/statistics_msgs")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/yifang/crazy_rl/devel/lib/python2.7/dist-packages/statistics_msgs")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yifang/catkin_ws_test/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgs.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yifang/crazy_rl/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgs.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs/cmake" TYPE FILE FILES "/home/yifang/catkin_ws_test/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgs-msg-extras.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs/cmake" TYPE FILE FILES "/home/yifang/crazy_rl/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgs-msg-extras.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs/cmake" TYPE FILE FILES
-    "/home/yifang/catkin_ws_test/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgsConfig.cmake"
-    "/home/yifang/catkin_ws_test/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgsConfig-version.cmake"
+    "/home/yifang/crazy_rl/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgsConfig.cmake"
+    "/home/yifang/crazy_rl/build/pointgrey_camera_driver/statistics_msgs/catkin_generated/installspace/statistics_msgsConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs" TYPE FILE FILES "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/statistics_msgs/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/statistics_msgs" TYPE FILE FILES "/home/yifang/crazy_rl/src/pointgrey_camera_driver/statistics_msgs/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

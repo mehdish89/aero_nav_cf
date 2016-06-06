@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yifang/catkin_ws_test/src
+CMAKE_SOURCE_DIR = /home/yifang/crazy_rl/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yifang/catkin_ws_test/build
+CMAKE_BINARY_DIR = /home/yifang/crazy_rl/build
 
 # Utility rule file for download_extra_data.
 
@@ -60,6 +60,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yifang/catkin_ws_test/src /home/yifang/catkin_ws_test/src /home/yifang/catkin_ws_test/build /home/yifang/catkin_ws_test/build /home/yifang/catkin_ws_test/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yifang/crazy_rl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yifang/crazy_rl/src /home/yifang/crazy_rl/src /home/yifang/crazy_rl/build /home/yifang/crazy_rl/build /home/yifang/crazy_rl/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 
