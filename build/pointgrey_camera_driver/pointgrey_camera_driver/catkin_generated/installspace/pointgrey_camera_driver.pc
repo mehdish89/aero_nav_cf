@@ -1,8 +1,0 @@
-prefix=/home/yifang/crazy_rl/install
-
-Name: pointgrey_camera_driver
-Description: Description of pointgrey_camera_driver
-Version: 0.12.1
-Cflags: -I/home/yifang/crazy_rl/install/include
-Libs: -L/home/yifang/crazy_rl/install/lib 
-Requires: roscpp nodelet

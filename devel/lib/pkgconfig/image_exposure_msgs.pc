@@ -1,8 +1,0 @@
-prefix=/home/yifang/crazy_rl/devel
-
-Name: image_exposure_msgs
-Description: Description of image_exposure_msgs
-Version: 0.12.1
-Cflags: -I/home/yifang/crazy_rl/devel/include
-Libs: -L/home/yifang/crazy_rl/devel/lib 
-Requires: statistics_msgs std_msgs message_runtime

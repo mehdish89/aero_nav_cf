@@ -1,8 +1,0 @@
-prefix=/home/yifang/crazy_rl/devel
-
-Name: camera
-Description: Description of camera
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/yifang/crazy_rl/devel/lib 
-Requires: gazebo_msgs roscpp

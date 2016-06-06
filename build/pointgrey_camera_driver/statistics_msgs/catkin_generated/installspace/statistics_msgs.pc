@@ -1,8 +1,0 @@
-prefix=/home/yifang/crazy_rl/install
-
-Name: statistics_msgs
-Description: Description of statistics_msgs
-Version: 0.12.1
-Cflags: -I/home/yifang/crazy_rl/install/include
-Libs: -L/home/yifang/crazy_rl/install/lib 
-Requires: message_runtime
