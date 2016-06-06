@@ -1,8 +1,0 @@
-prefix=/home/yifang/catkin_ws_test/install
-
-Name: pointgrey_camera_driver
-Description: Description of pointgrey_camera_driver
-Version: 0.12.1
-Cflags: -I/home/yifang/catkin_ws_test/install/include
-Libs: -L/home/yifang/catkin_ws_test/install/lib 
-Requires: roscpp nodelet

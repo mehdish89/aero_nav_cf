@@ -1,8 +1,0 @@
-prefix=/home/yifang/catkin_ws_test/install
-
-Name: wfov_camera_msgs
-Description: Description of wfov_camera_msgs
-Version: 0.12.1
-Cflags: -I/home/yifang/catkin_ws_test/install/include
-Libs: -L/home/yifang/catkin_ws_test/install/lib 
-Requires: sensor_msgs message_runtime

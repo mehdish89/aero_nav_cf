@@ -34,11 +34,14 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yifang/catkin_ws_test/src
+CMAKE_SOURCE_DIR = /home/meit/crazyflie_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yifang/catkin_ws_test/build
+CMAKE_BINARY_DIR = /home/meit/crazyflie_ws/build
 
 # Utility rule file for _apriltags_ros_generate_messages_check_deps_AprilTagDetection.
 
@@ -46,7 +49,7 @@ CMAKE_BINARY_DIR = /home/yifang/catkin_ws_test/build
 include apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/progress.make
 
 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection:
-	cd /home/yifang/catkin_ws_test/build/apriltags_ros/apriltags_ros && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py apriltags_ros /home/yifang/catkin_ws_test/src/apriltags_ros/apriltags_ros/msg/AprilTagDetection.msg geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Pose
+	cd /home/meit/crazyflie_ws/build/apriltags_ros/apriltags_ros && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py apriltags_ros /home/meit/crazyflie_ws/src/apriltags_ros/apriltags_ros/msg/AprilTagDetection.msg geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Pose
 
 _apriltags_ros_generate_messages_check_deps_AprilTagDetection: apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection
 _apriltags_ros_generate_messages_check_deps_AprilTagDetection: apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/build.make
@@ -57,10 +60,10 @@ apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_de
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/build
 
 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/clean:
-	cd /home/yifang/catkin_ws_test/build/apriltags_ros/apriltags_ros && $(CMAKE_COMMAND) -P CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/cmake_clean.cmake
+	cd /home/meit/crazyflie_ws/build/apriltags_ros/apriltags_ros && $(CMAKE_COMMAND) -P CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/cmake_clean.cmake
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/clean
 
 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/depend:
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yifang/catkin_ws_test/src /home/yifang/catkin_ws_test/src/apriltags_ros/apriltags_ros /home/yifang/catkin_ws_test/build /home/yifang/catkin_ws_test/build/apriltags_ros/apriltags_ros /home/yifang/catkin_ws_test/build/apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/meit/crazyflie_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/meit/crazyflie_ws/src /home/meit/crazyflie_ws/src/apriltags_ros/apriltags_ros /home/meit/crazyflie_ws/build /home/meit/crazyflie_ws/build/apriltags_ros/apriltags_ros /home/meit/crazyflie_ws/build/apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/depend
 

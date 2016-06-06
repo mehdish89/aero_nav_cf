@@ -1,8 +1,8 @@
-prefix=/home/yifang/catkin_ws_test/install
+prefix=/home/meit/crazyflie_ws/install
 
 Name: lab3
 Description: Description of lab3
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/yifang/catkin_ws_test/install/lib 
+Libs: -L/home/meit/crazyflie_ws/install/lib 
 Requires: 

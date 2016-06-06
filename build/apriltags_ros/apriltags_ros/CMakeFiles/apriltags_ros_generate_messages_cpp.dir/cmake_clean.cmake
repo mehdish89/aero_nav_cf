@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/apriltags_ros_generate_messages_cpp"
-  "/home/yifang/catkin_ws_test/devel/include/apriltags_ros/AprilTagDetection.h"
-  "/home/yifang/catkin_ws_test/devel/include/apriltags_ros/AprilTagDetectionArray.h"
+  "/home/meit/crazyflie_ws/devel/include/apriltags_ros/AprilTagDetectionArray.h"
+  "/home/meit/crazyflie_ws/devel/include/apriltags_ros/AprilTagDetection.h"
 )
 
 # Per-language clean rules from dependency scanning.

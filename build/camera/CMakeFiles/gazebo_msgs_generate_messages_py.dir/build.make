@@ -34,11 +34,14 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yifang/catkin_ws_test/src
+CMAKE_SOURCE_DIR = /home/meit/crazyflie_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yifang/catkin_ws_test/build
+CMAKE_BINARY_DIR = /home/meit/crazyflie_ws/build
 
 # Utility rule file for gazebo_msgs_generate_messages_py.
 
@@ -56,10 +59,10 @@ camera/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build: gazebo_msgs_genera
 .PHONY : camera/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
 
 camera/CMakeFiles/gazebo_msgs_generate_messages_py.dir/clean:
-	cd /home/yifang/catkin_ws_test/build/camera && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/meit/crazyflie_ws/build/camera && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : camera/CMakeFiles/gazebo_msgs_generate_messages_py.dir/clean
 
 camera/CMakeFiles/gazebo_msgs_generate_messages_py.dir/depend:
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yifang/catkin_ws_test/src /home/yifang/catkin_ws_test/src/camera /home/yifang/catkin_ws_test/build /home/yifang/catkin_ws_test/build/camera /home/yifang/catkin_ws_test/build/camera/CMakeFiles/gazebo_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/meit/crazyflie_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/meit/crazyflie_ws/src /home/meit/crazyflie_ws/src/camera /home/meit/crazyflie_ws/build /home/meit/crazyflie_ws/build/camera /home/meit/crazyflie_ws/build/camera/CMakeFiles/gazebo_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : camera/CMakeFiles/gazebo_msgs_generate_messages_py.dir/depend
 

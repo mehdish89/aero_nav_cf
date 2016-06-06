@@ -34,11 +34,14 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yifang/catkin_ws_test/src
+CMAKE_SOURCE_DIR = /home/meit/crazyflie_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yifang/catkin_ws_test/build
+CMAKE_BINARY_DIR = /home/meit/crazyflie_ws/build
 
 # Include any dependencies generated for this target.
 include crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/depend.make
@@ -50,18 +53,18 @@ include crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/progress.make
 include crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/flags.make
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/flags.make
-crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o: /home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyradio.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yifang/catkin_ws_test/build/CMakeFiles $(CMAKE_PROGRESS_1)
+crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o: /home/meit/crazyflie_ws/src/crazyflie_cpp/src/Crazyradio.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/meit/crazyflie_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_cpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o -c /home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyradio.cpp
+	cd /home/meit/crazyflie_ws/build/crazyflie_cpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o -c /home/meit/crazyflie_ws/src/crazyflie_cpp/src/Crazyradio.cpp
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.i"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyradio.cpp > CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.i
+	cd /home/meit/crazyflie_ws/build/crazyflie_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/meit/crazyflie_ws/src/crazyflie_cpp/src/Crazyradio.cpp > CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.i
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.s"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyradio.cpp -o CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.s
+	cd /home/meit/crazyflie_ws/build/crazyflie_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/meit/crazyflie_ws/src/crazyflie_cpp/src/Crazyradio.cpp -o CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.s
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o.requires:
 .PHONY : crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o.requires
@@ -73,18 +76,18 @@ crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o.provides: crazyf
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o.provides.build: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/flags.make
-crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o: /home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyflie.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yifang/catkin_ws_test/build/CMakeFiles $(CMAKE_PROGRESS_2)
+crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o: /home/meit/crazyflie_ws/src/crazyflie_cpp/src/Crazyflie.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/meit/crazyflie_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_cpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o -c /home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyflie.cpp
+	cd /home/meit/crazyflie_ws/build/crazyflie_cpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o -c /home/meit/crazyflie_ws/src/crazyflie_cpp/src/Crazyflie.cpp
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.i"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyflie.cpp > CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.i
+	cd /home/meit/crazyflie_ws/build/crazyflie_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/meit/crazyflie_ws/src/crazyflie_cpp/src/Crazyflie.cpp > CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.i
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.s"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yifang/catkin_ws_test/src/crazyflie_cpp/src/Crazyflie.cpp -o CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.s
+	cd /home/meit/crazyflie_ws/build/crazyflie_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/meit/crazyflie_ws/src/crazyflie_cpp/src/Crazyflie.cpp -o CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.s
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o.requires:
 .PHONY : crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o.requires
@@ -103,16 +106,16 @@ crazyflie_cpp_OBJECTS = \
 # External object files for target crazyflie_cpp
 crazyflie_cpp_EXTERNAL_OBJECTS =
 
-/home/yifang/catkin_ws_test/devel/lib/libcrazyflie_cpp.so: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o
-/home/yifang/catkin_ws_test/devel/lib/libcrazyflie_cpp.so: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o
-/home/yifang/catkin_ws_test/devel/lib/libcrazyflie_cpp.so: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build.make
-/home/yifang/catkin_ws_test/devel/lib/libcrazyflie_cpp.so: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
-/home/yifang/catkin_ws_test/devel/lib/libcrazyflie_cpp.so: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library /home/yifang/catkin_ws_test/devel/lib/libcrazyflie_cpp.so"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_cpp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/crazyflie_cpp.dir/link.txt --verbose=$(VERBOSE)
+/home/meit/crazyflie_ws/devel/lib/libcrazyflie_cpp.so: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o
+/home/meit/crazyflie_ws/devel/lib/libcrazyflie_cpp.so: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o
+/home/meit/crazyflie_ws/devel/lib/libcrazyflie_cpp.so: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build.make
+/home/meit/crazyflie_ws/devel/lib/libcrazyflie_cpp.so: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+/home/meit/crazyflie_ws/devel/lib/libcrazyflie_cpp.so: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library /home/meit/crazyflie_ws/devel/lib/libcrazyflie_cpp.so"
+	cd /home/meit/crazyflie_ws/build/crazyflie_cpp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/crazyflie_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build: /home/yifang/catkin_ws_test/devel/lib/libcrazyflie_cpp.so
+crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build: /home/meit/crazyflie_ws/devel/lib/libcrazyflie_cpp.so
 .PHONY : crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/requires: crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyradio.cpp.o.requires
@@ -120,10 +123,10 @@ crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/requires: crazyflie_cpp/CMakeFiles/cr
 .PHONY : crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/requires
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/clean:
-	cd /home/yifang/catkin_ws_test/build/crazyflie_cpp && $(CMAKE_COMMAND) -P CMakeFiles/crazyflie_cpp.dir/cmake_clean.cmake
+	cd /home/meit/crazyflie_ws/build/crazyflie_cpp && $(CMAKE_COMMAND) -P CMakeFiles/crazyflie_cpp.dir/cmake_clean.cmake
 .PHONY : crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/clean
 
 crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/depend:
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yifang/catkin_ws_test/src /home/yifang/catkin_ws_test/src/crazyflie_cpp /home/yifang/catkin_ws_test/build /home/yifang/catkin_ws_test/build/crazyflie_cpp /home/yifang/catkin_ws_test/build/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/meit/crazyflie_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/meit/crazyflie_ws/src /home/meit/crazyflie_ws/src/crazyflie_cpp /home/meit/crazyflie_ws/build /home/meit/crazyflie_ws/build/crazyflie_cpp /home/meit/crazyflie_ws/build/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/depend
 

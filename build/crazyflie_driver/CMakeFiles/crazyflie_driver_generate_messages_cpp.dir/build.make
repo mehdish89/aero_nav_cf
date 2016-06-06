@@ -34,58 +34,61 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yifang/catkin_ws_test/src
+CMAKE_SOURCE_DIR = /home/meit/crazyflie_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yifang/catkin_ws_test/build
+CMAKE_BINARY_DIR = /home/meit/crazyflie_ws/build
 
 # Utility rule file for crazyflie_driver_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/progress.make
 
-crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/yifang/catkin_ws_test/devel/include/crazyflie_driver/GenericLogData.h
-crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/yifang/catkin_ws_test/devel/include/crazyflie_driver/LogBlock.h
-crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/yifang/catkin_ws_test/devel/include/crazyflie_driver/AddCrazyflie.h
-crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/yifang/catkin_ws_test/devel/include/crazyflie_driver/UpdateParams.h
+crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/meit/crazyflie_ws/devel/include/crazyflie_driver/GenericLogData.h
+crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/meit/crazyflie_ws/devel/include/crazyflie_driver/LogBlock.h
+crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/meit/crazyflie_ws/devel/include/crazyflie_driver/AddCrazyflie.h
+crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp: /home/meit/crazyflie_ws/devel/include/crazyflie_driver/UpdateParams.h
 
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/GenericLogData.h: /home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yifang/catkin_ws_test/build/CMakeFiles $(CMAKE_PROGRESS_1)
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/GenericLogData.h: /home/meit/crazyflie_ws/src/crazyflie_driver/msg/GenericLogData.msg
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/GenericLogData.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/meit/crazyflie_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/GenericLogData.msg"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_driver && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/yifang/catkin_ws_test/src/crazyflie_driver/msg/GenericLogData.msg -Icrazyflie_driver:/home/yifang/catkin_ws_test/src/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p crazyflie_driver -o /home/yifang/catkin_ws_test/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+	cd /home/meit/crazyflie_ws/build/crazyflie_driver && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/meit/crazyflie_ws/src/crazyflie_driver/msg/GenericLogData.msg -Icrazyflie_driver:/home/meit/crazyflie_ws/src/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p crazyflie_driver -o /home/meit/crazyflie_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/LogBlock.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/LogBlock.h: /home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/LogBlock.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yifang/catkin_ws_test/build/CMakeFiles $(CMAKE_PROGRESS_2)
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/LogBlock.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/LogBlock.h: /home/meit/crazyflie_ws/src/crazyflie_driver/msg/LogBlock.msg
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/LogBlock.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/meit/crazyflie_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/LogBlock.msg"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_driver && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg -Icrazyflie_driver:/home/yifang/catkin_ws_test/src/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p crazyflie_driver -o /home/yifang/catkin_ws_test/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+	cd /home/meit/crazyflie_ws/build/crazyflie_driver && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/meit/crazyflie_ws/src/crazyflie_driver/msg/LogBlock.msg -Icrazyflie_driver:/home/meit/crazyflie_ws/src/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p crazyflie_driver -o /home/meit/crazyflie_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/AddCrazyflie.h: /home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/AddCrazyflie.h: /home/yifang/catkin_ws_test/src/crazyflie_driver/msg/LogBlock.msg
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yifang/catkin_ws_test/build/CMakeFiles $(CMAKE_PROGRESS_3)
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /home/meit/crazyflie_ws/src/crazyflie_driver/srv/AddCrazyflie.srv
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /home/meit/crazyflie_ws/src/crazyflie_driver/msg/LogBlock.msg
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/AddCrazyflie.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/meit/crazyflie_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/AddCrazyflie.srv"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_driver && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/yifang/catkin_ws_test/src/crazyflie_driver/srv/AddCrazyflie.srv -Icrazyflie_driver:/home/yifang/catkin_ws_test/src/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p crazyflie_driver -o /home/yifang/catkin_ws_test/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+	cd /home/meit/crazyflie_ws/build/crazyflie_driver && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/meit/crazyflie_ws/src/crazyflie_driver/srv/AddCrazyflie.srv -Icrazyflie_driver:/home/meit/crazyflie_ws/src/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p crazyflie_driver -o /home/meit/crazyflie_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/UpdateParams.h: /home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-/home/yifang/catkin_ws_test/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yifang/catkin_ws_test/build/CMakeFiles $(CMAKE_PROGRESS_4)
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/UpdateParams.h: /home/meit/crazyflie_ws/src/crazyflie_driver/srv/UpdateParams.srv
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/meit/crazyflie_ws/devel/include/crazyflie_driver/UpdateParams.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/meit/crazyflie_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from crazyflie_driver/UpdateParams.srv"
-	cd /home/yifang/catkin_ws_test/build/crazyflie_driver && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/yifang/catkin_ws_test/src/crazyflie_driver/srv/UpdateParams.srv -Icrazyflie_driver:/home/yifang/catkin_ws_test/src/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p crazyflie_driver -o /home/yifang/catkin_ws_test/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
+	cd /home/meit/crazyflie_ws/build/crazyflie_driver && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/meit/crazyflie_ws/src/crazyflie_driver/srv/UpdateParams.srv -Icrazyflie_driver:/home/meit/crazyflie_ws/src/crazyflie_driver/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p crazyflie_driver -o /home/meit/crazyflie_ws/devel/include/crazyflie_driver -e /opt/ros/indigo/share/gencpp/cmake/..
 
 crazyflie_driver_generate_messages_cpp: crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp
-crazyflie_driver_generate_messages_cpp: /home/yifang/catkin_ws_test/devel/include/crazyflie_driver/GenericLogData.h
-crazyflie_driver_generate_messages_cpp: /home/yifang/catkin_ws_test/devel/include/crazyflie_driver/LogBlock.h
-crazyflie_driver_generate_messages_cpp: /home/yifang/catkin_ws_test/devel/include/crazyflie_driver/AddCrazyflie.h
-crazyflie_driver_generate_messages_cpp: /home/yifang/catkin_ws_test/devel/include/crazyflie_driver/UpdateParams.h
+crazyflie_driver_generate_messages_cpp: /home/meit/crazyflie_ws/devel/include/crazyflie_driver/GenericLogData.h
+crazyflie_driver_generate_messages_cpp: /home/meit/crazyflie_ws/devel/include/crazyflie_driver/LogBlock.h
+crazyflie_driver_generate_messages_cpp: /home/meit/crazyflie_ws/devel/include/crazyflie_driver/AddCrazyflie.h
+crazyflie_driver_generate_messages_cpp: /home/meit/crazyflie_ws/devel/include/crazyflie_driver/UpdateParams.h
 crazyflie_driver_generate_messages_cpp: crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build.make
 .PHONY : crazyflie_driver_generate_messages_cpp
 
@@ -94,10 +97,10 @@ crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build: cr
 .PHONY : crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build
 
 crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/clean:
-	cd /home/yifang/catkin_ws_test/build/crazyflie_driver && $(CMAKE_COMMAND) -P CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/meit/crazyflie_ws/build/crazyflie_driver && $(CMAKE_COMMAND) -P CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/clean
 
 crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/depend:
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yifang/catkin_ws_test/src /home/yifang/catkin_ws_test/src/crazyflie_driver /home/yifang/catkin_ws_test/build /home/yifang/catkin_ws_test/build/crazyflie_driver /home/yifang/catkin_ws_test/build/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/meit/crazyflie_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/meit/crazyflie_ws/src /home/meit/crazyflie_ws/src/crazyflie_driver /home/meit/crazyflie_ws/build /home/meit/crazyflie_ws/build/crazyflie_driver /home/meit/crazyflie_ws/build/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/depend
 

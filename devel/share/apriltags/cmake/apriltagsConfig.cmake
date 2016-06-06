@@ -67,14 +67,14 @@ set(apriltags_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(apriltags_SOURCE_PREFIX /home/yifang/catkin_ws_test/src/apriltags_ros/apriltags)
-  set(apriltags_DEVEL_PREFIX /home/yifang/catkin_ws_test/devel)
+  set(apriltags_SOURCE_PREFIX /home/meit/crazyflie_ws/src/apriltags_ros/apriltags)
+  set(apriltags_DEVEL_PREFIX /home/meit/crazyflie_ws/devel)
   set(apriltags_INSTALL_PREFIX "")
   set(apriltags_PREFIX ${apriltags_DEVEL_PREFIX})
 else()
   set(apriltags_SOURCE_PREFIX "")
   set(apriltags_DEVEL_PREFIX "")
-  set(apriltags_INSTALL_PREFIX /home/yifang/catkin_ws_test/install)
+  set(apriltags_INSTALL_PREFIX /home/meit/crazyflie_ws/install)
   set(apriltags_PREFIX ${apriltags_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(apriltags_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/yifang/catkin_ws_test/src/apriltags_ros/apriltags/include;/usr/include/eigen3;/usr/local/include/opencv;/usr/local/include " STREQUAL " ")
+if(NOT "/home/meit/crazyflie_ws/src/apriltags_ros/apriltags/include;/usr/include/eigen3;/usr/local/include/opencv;/usr/local/include " STREQUAL " ")
   set(apriltags_INCLUDE_DIRS "")
-  set(_include_dirs "/home/yifang/catkin_ws_test/src/apriltags_ros/apriltags/include;/usr/include/eigen3;/usr/local/include/opencv;/usr/local/include")
+  set(_include_dirs "/home/meit/crazyflie_ws/src/apriltags_ros/apriltags/include;/usr/include/eigen3;/usr/local/include/opencv;/usr/local/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -103,13 +103,13 @@ if(NOT "/home/yifang/catkin_ws_test/src/apriltags_ros/apriltags/include;/usr/inc
         message(FATAL_ERROR "Project 'apriltags' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'Mitchell Wills <mwills@wpi.edu>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'apriltags' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/yifang/catkin_ws_test/src/apriltags_ros/apriltags/${idir}'.  Ask the maintainer 'Mitchell Wills <mwills@wpi.edu>' to fix it.")
+      message(FATAL_ERROR "Project 'apriltags' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/meit/crazyflie_ws/src/apriltags_ros/apriltags/${idir}'.  Ask the maintainer 'Mitchell Wills <mwills@wpi.edu>' to fix it.")
     endif()
     _list_append_unique(apriltags_INCLUDE_DIRS ${include})
   endforeach()
 endif()
 
-set(libraries "apriltags;/usr/local/lib/libopencv_viz.so.3.1.0;/usr/local/lib/libopencv_videostab.so.3.1.0;/usr/local/lib/libopencv_videoio.so.3.1.0;/usr/local/lib/libopencv_video.so.3.1.0;/usr/local/lib/libopencv_superres.so.3.1.0;/usr/local/lib/libopencv_stitching.so.3.1.0;/usr/local/lib/libopencv_shape.so.3.1.0;/usr/local/lib/libopencv_photo.so.3.1.0;/usr/local/lib/libopencv_objdetect.so.3.1.0;/usr/local/lib/libopencv_ml.so.3.1.0;/usr/local/lib/libopencv_imgproc.so.3.1.0;/usr/local/lib/libopencv_imgcodecs.so.3.1.0;/usr/local/lib/libopencv_highgui.so.3.1.0;/usr/local/lib/libopencv_flann.so.3.1.0;/usr/local/lib/libopencv_features2d.so.3.1.0;/usr/local/lib/libopencv_core.so.3.1.0;/usr/local/lib/libopencv_calib3d.so.3.1.0")
+set(libraries "apriltags;/usr/local/lib/libopencv_videostab.so.2.4.10;/usr/local/lib/libopencv_video.so.2.4.10;/usr/local/lib/libopencv_superres.so.2.4.10;/usr/local/lib/libopencv_stitching.so.2.4.10;/usr/local/lib/libopencv_photo.so.2.4.10;/usr/local/lib/libopencv_objdetect.so.2.4.10;/usr/local/lib/libopencv_nonfree.so.2.4.10;/usr/local/lib/libopencv_ml.so.2.4.10;/usr/local/lib/libopencv_legacy.so.2.4.10;/usr/local/lib/libopencv_imgproc.so.2.4.10;/usr/local/lib/libopencv_highgui.so.2.4.10;/usr/local/lib/libopencv_gpu.so.2.4.10;/usr/local/lib/libopencv_flann.so.2.4.10;/usr/local/lib/libopencv_features2d.so.2.4.10;/usr/local/lib/libopencv_core.so.2.4.10;/usr/local/lib/libopencv_contrib.so.2.4.10;/usr/local/lib/libopencv_calib3d.so.2.4.10")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/yifang/catkin_ws_test/devel/lib;/opt/ros/indigo/lib)
+    foreach(path /home/meit/crazyflie_ws/devel/lib;/home/meit/catkin_ws/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

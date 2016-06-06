@@ -1,8 +1,8 @@
-prefix=/home/yifang/catkin_ws_test/install
+prefix=/home/meit/crazyflie_ws/install
 
 Name: crazyflie_cpp
 Description: Description of crazyflie_cpp
 Version: 0.0.1
-Cflags: -I/home/yifang/catkin_ws_test/install/include
-Libs: -L/home/yifang/catkin_ws_test/install/lib -lcrazyflie_cpp
+Cflags: -I/home/meit/crazyflie_ws/install/include
+Libs: -L/home/meit/crazyflie_ws/install/lib -lcrazyflie_cpp
 Requires: 

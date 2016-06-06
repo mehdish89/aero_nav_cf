@@ -1,8 +1,0 @@
-prefix=/home/yifang/catkin_ws_test/devel
-
-Name: image_exposure_msgs
-Description: Description of image_exposure_msgs
-Version: 0.12.1
-Cflags: -I/home/yifang/catkin_ws_test/devel/include
-Libs: -L/home/yifang/catkin_ws_test/devel/lib 
-Requires: statistics_msgs std_msgs message_runtime

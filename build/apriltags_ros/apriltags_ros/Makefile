@@ -38,19 +38,22 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yifang/catkin_ws_test/src
+CMAKE_SOURCE_DIR = /home/meit/crazyflie_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yifang/catkin_ws_test/build
+CMAKE_BINARY_DIR = /home/meit/crazyflie_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -120,14 +123,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yifang/catkin_ws_test/build/CMakeFiles /home/yifang/catkin_ws_test/build/apriltags_ros/apriltags_ros/CMakeFiles/progress.marks
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yifang/catkin_ws_test/build/CMakeFiles 0
+	cd /home/meit/crazyflie_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/meit/crazyflie_ws/build/CMakeFiles /home/meit/crazyflie_ws/build/apriltags_ros/apriltags_ros/CMakeFiles/progress.marks
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meit/crazyflie_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/clean
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/preinstall
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/preinstall
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/meit/crazyflie_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/rule
 
 # Convenience name for target.
@@ -160,12 +163,12 @@ _apriltags_ros_generate_messages_check_deps_AprilTagDetection: apriltags_ros/apr
 
 # fast build rule for target.
 _apriltags_ros_generate_messages_check_deps_AprilTagDetection/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetection.dir/build
 .PHONY : _apriltags_ros_generate_messages_check_deps_AprilTagDetection/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/rule
 
 # Convenience name for target.
@@ -174,12 +177,12 @@ _apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray: apriltags_ro
 
 # fast build rule for target.
 _apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/_apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/build
 .PHONY : _apriltags_ros_generate_messages_check_deps_AprilTagDetectionArray/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/rule
 
 # Convenience name for target.
@@ -188,12 +191,12 @@ apriltag_detector: apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/
 
 # fast build rule for target.
 apriltag_detector/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build
 .PHONY : apriltag_detector/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/rule
 
 # Convenience name for target.
@@ -202,12 +205,12 @@ apriltag_detector_node: apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector
 
 # fast build rule for target.
 apriltag_detector_node/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build
 .PHONY : apriltag_detector_node/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/rule
 
 # Convenience name for target.
@@ -216,12 +219,12 @@ apriltag_detector_nodelet: apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detec
 
 # fast build rule for target.
 apriltag_detector_nodelet/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build
 .PHONY : apriltag_detector_nodelet/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencpp.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencpp.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencpp.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencpp.dir/rule
 
 # Convenience name for target.
@@ -230,12 +233,12 @@ apriltags_ros_gencpp: apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencp
 
 # fast build rule for target.
 apriltags_ros_gencpp/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencpp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencpp.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencpp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_gencpp.dir/build
 .PHONY : apriltags_ros_gencpp/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -244,12 +247,12 @@ apriltags_ros_generate_messages: apriltags_ros/apriltags_ros/CMakeFiles/apriltag
 
 # fast build rule for target.
 apriltags_ros_generate_messages/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages.dir/build
 .PHONY : apriltags_ros_generate_messages/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_cpp.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_cpp.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_cpp.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -258,12 +261,12 @@ apriltags_ros_generate_messages_cpp: apriltags_ros/apriltags_ros/CMakeFiles/apri
 
 # fast build rule for target.
 apriltags_ros_generate_messages_cpp/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_cpp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_cpp.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_cpp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_cpp.dir/build
 .PHONY : apriltags_ros_generate_messages_cpp/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_lisp.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_lisp.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_lisp.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -272,12 +275,12 @@ apriltags_ros_generate_messages_lisp: apriltags_ros/apriltags_ros/CMakeFiles/apr
 
 # fast build rule for target.
 apriltags_ros_generate_messages_lisp/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_lisp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_lisp.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_lisp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_lisp.dir/build
 .PHONY : apriltags_ros_generate_messages_lisp/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_py.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_py.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_py.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -286,12 +289,12 @@ apriltags_ros_generate_messages_py: apriltags_ros/apriltags_ros/CMakeFiles/april
 
 # fast build rule for target.
 apriltags_ros_generate_messages_py/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_py.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_py.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_py.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_generate_messages_py.dir/build
 .PHONY : apriltags_ros_generate_messages_py/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genlisp.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genlisp.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genlisp.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genlisp.dir/rule
 
 # Convenience name for target.
@@ -300,12 +303,12 @@ apriltags_ros_genlisp: apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genl
 
 # fast build rule for target.
 apriltags_ros_genlisp/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genlisp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genlisp.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genlisp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genlisp.dir/build
 .PHONY : apriltags_ros_genlisp/fast
 
 # Convenience name for target.
 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.dir/rule:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.dir/rule
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.dir/rule
 .PHONY : apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.dir/rule
 
 # Convenience name for target.
@@ -314,15 +317,99 @@ apriltags_ros_genpy: apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.
 
 # fast build rule for target.
 apriltags_ros_genpy/fast:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.dir/build
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltags_ros_genpy.dir/build
 .PHONY : apriltags_ros_genpy/fast
+
+# Convenience name for target.
+apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_cpp.dir/rule:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_cpp: apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : bond_generate_messages_cpp
+
+# fast build rule for target.
+bond_generate_messages_cpp/fast:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_cpp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
+
+# Convenience name for target.
+apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_lisp.dir/rule:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_lisp.dir/rule
+.PHONY : apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_lisp: apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_lisp.dir/rule
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_lisp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_py.dir/rule:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_py.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+# Convenience name for target.
+apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+.PHONY : apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_cpp: apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+.PHONY : nodelet_generate_messages_cpp
+
+# fast build rule for target.
+nodelet_generate_messages_cpp/fast:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
+
+# Convenience name for target.
+apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+.PHONY : apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_lisp: apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+.PHONY : nodelet_generate_messages_lisp
+
+# fast build rule for target.
+nodelet_generate_messages_lisp/fast:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
+
+# Convenience name for target.
+apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_py.dir/rule:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f CMakeFiles/Makefile2 apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_py.dir/rule
+.PHONY : apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_py: apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_py.dir/rule
+.PHONY : nodelet_generate_messages_py
+
+# fast build rule for target.
+nodelet_generate_messages_py/fast:
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_py.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/nodelet_generate_messages_py.dir/build
+.PHONY : nodelet_generate_messages_py/fast
 
 src/apriltag_detector.o: src/apriltag_detector.cpp.o
 .PHONY : src/apriltag_detector.o
 
 # target to build an object file
 src/apriltag_detector.cpp.o:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/src/apriltag_detector.cpp.o
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/src/apriltag_detector.cpp.o
 .PHONY : src/apriltag_detector.cpp.o
 
 src/apriltag_detector.i: src/apriltag_detector.cpp.i
@@ -330,7 +417,7 @@ src/apriltag_detector.i: src/apriltag_detector.cpp.i
 
 # target to preprocess a source file
 src/apriltag_detector.cpp.i:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/src/apriltag_detector.cpp.i
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/src/apriltag_detector.cpp.i
 .PHONY : src/apriltag_detector.cpp.i
 
 src/apriltag_detector.s: src/apriltag_detector.cpp.s
@@ -338,7 +425,7 @@ src/apriltag_detector.s: src/apriltag_detector.cpp.s
 
 # target to generate assembly for a file
 src/apriltag_detector.cpp.s:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/src/apriltag_detector.cpp.s
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector.dir/src/apriltag_detector.cpp.s
 .PHONY : src/apriltag_detector.cpp.s
 
 src/apriltag_detector_node.o: src/apriltag_detector_node.cpp.o
@@ -346,7 +433,7 @@ src/apriltag_detector_node.o: src/apriltag_detector_node.cpp.o
 
 # target to build an object file
 src/apriltag_detector_node.cpp.o:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/src/apriltag_detector_node.cpp.o
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/src/apriltag_detector_node.cpp.o
 .PHONY : src/apriltag_detector_node.cpp.o
 
 src/apriltag_detector_node.i: src/apriltag_detector_node.cpp.i
@@ -354,7 +441,7 @@ src/apriltag_detector_node.i: src/apriltag_detector_node.cpp.i
 
 # target to preprocess a source file
 src/apriltag_detector_node.cpp.i:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/src/apriltag_detector_node.cpp.i
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/src/apriltag_detector_node.cpp.i
 .PHONY : src/apriltag_detector_node.cpp.i
 
 src/apriltag_detector_node.s: src/apriltag_detector_node.cpp.s
@@ -362,7 +449,7 @@ src/apriltag_detector_node.s: src/apriltag_detector_node.cpp.s
 
 # target to generate assembly for a file
 src/apriltag_detector_node.cpp.s:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/src/apriltag_detector_node.cpp.s
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_node.dir/src/apriltag_detector_node.cpp.s
 .PHONY : src/apriltag_detector_node.cpp.s
 
 src/apriltag_detector_nodelet.o: src/apriltag_detector_nodelet.cpp.o
@@ -370,7 +457,7 @@ src/apriltag_detector_nodelet.o: src/apriltag_detector_nodelet.cpp.o
 
 # target to build an object file
 src/apriltag_detector_nodelet.cpp.o:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/src/apriltag_detector_nodelet.cpp.o
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/src/apriltag_detector_nodelet.cpp.o
 .PHONY : src/apriltag_detector_nodelet.cpp.o
 
 src/apriltag_detector_nodelet.i: src/apriltag_detector_nodelet.cpp.i
@@ -378,7 +465,7 @@ src/apriltag_detector_nodelet.i: src/apriltag_detector_nodelet.cpp.i
 
 # target to preprocess a source file
 src/apriltag_detector_nodelet.cpp.i:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/src/apriltag_detector_nodelet.cpp.i
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/src/apriltag_detector_nodelet.cpp.i
 .PHONY : src/apriltag_detector_nodelet.cpp.i
 
 src/apriltag_detector_nodelet.s: src/apriltag_detector_nodelet.cpp.s
@@ -386,7 +473,7 @@ src/apriltag_detector_nodelet.s: src/apriltag_detector_nodelet.cpp.s
 
 # target to generate assembly for a file
 src/apriltag_detector_nodelet.cpp.s:
-	cd /home/yifang/catkin_ws_test/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/src/apriltag_detector_nodelet.cpp.s
+	cd /home/meit/crazyflie_ws/build && $(MAKE) -f apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/build.make apriltags_ros/apriltags_ros/CMakeFiles/apriltag_detector_nodelet.dir/src/apriltag_detector_nodelet.cpp.s
 .PHONY : src/apriltag_detector_nodelet.cpp.s
 
 # Help Target
@@ -407,11 +494,17 @@ help:
 	@echo "... apriltags_ros_generate_messages_py"
 	@echo "... apriltags_ros_genlisp"
 	@echo "... apriltags_ros_genpy"
+	@echo "... bond_generate_messages_cpp"
+	@echo "... bond_generate_messages_lisp"
+	@echo "... bond_generate_messages_py"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... nodelet_generate_messages_cpp"
+	@echo "... nodelet_generate_messages_lisp"
+	@echo "... nodelet_generate_messages_py"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... src/apriltag_detector.o"
@@ -434,6 +527,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yifang/catkin_ws_test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/meit/crazyflie_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

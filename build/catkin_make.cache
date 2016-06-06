@@ -1,2 +1,2 @@
-apriltags_ros/apriltags:apriltags_ros/apriltags_ros:basic_log:camera:crazyflie:crazyflie_controller:crazyflie_cpp:crazyflie_demo:crazyflie_description:crazyflie_driver:crazyflie_tools:lab3:pointgrey_camera_driver/image_exposure_msgs:pointgrey_camera_driver/pointgrey_camera_description:pointgrey_camera_driver/pointgrey_camera_driver:pointgrey_camera_driver/statistics_msgs:pointgrey_camera_driver/wfov_camera_msgs:usb_cam
--DCATKIN_DEVEL_PREFIX=/home/yifang/catkin_ws_test/devel -DCMAKE_INSTALL_PREFIX=/home/yifang/catkin_ws_test/install -G Unix Makefiles
+apriltags_ros/apriltags:apriltags_ros/apriltags_ros:basic_log:camera:crazyflie:crazyflie_controller:crazyflie_cpp:crazyflie_demo:crazyflie_description:crazyflie_driver:crazyflie_tools:lab3
+-DCATKIN_DEVEL_PREFIX=/home/meit/crazyflie_ws/devel -DCMAKE_INSTALL_PREFIX=/home/meit/crazyflie_ws/install -G Unix Makefiles

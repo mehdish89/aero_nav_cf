@@ -29,7 +29,6 @@ struct AprilTagDetectionArray_
     }
   AprilTagDetectionArray_(const ContainerAllocator& _alloc)
     : detections(_alloc)  {
-  (void)_alloc;
     }
 
 
@@ -71,7 +70,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'geometry_msgs': ['/opt/ros/indigo/share/geometry_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/indigo/share/std_msgs/cmake/../msg'], 'apriltags_ros': ['/home/yifang/catkin_ws_test/src/apriltags_ros/apriltags_ros/msg']}
+// {'geometry_msgs': ['/opt/ros/indigo/share/geometry_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/indigo/share/std_msgs/cmake/../msg'], 'apriltags_ros': ['/home/meit/crazyflie_ws/src/apriltags_ros/apriltags_ros/msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 

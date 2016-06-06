@@ -16,8 +16,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/yifang/catkin_ws_test/devel/include"
-  "/home/yifang/catkin_ws_test/src/crazyflie_cpp/include"
+  "/home/meit/crazyflie_ws/devel/include"
+  "/home/meit/crazyflie_ws/src/crazyflie_cpp/include"
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

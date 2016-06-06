@@ -1,9 +1,9 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/crazyflie_driver_generate_messages_lisp"
-  "/home/yifang/catkin_ws_test/devel/share/common-lisp/ros/crazyflie_driver/msg/GenericLogData.lisp"
-  "/home/yifang/catkin_ws_test/devel/share/common-lisp/ros/crazyflie_driver/msg/LogBlock.lisp"
-  "/home/yifang/catkin_ws_test/devel/share/common-lisp/ros/crazyflie_driver/srv/AddCrazyflie.lisp"
-  "/home/yifang/catkin_ws_test/devel/share/common-lisp/ros/crazyflie_driver/srv/UpdateParams.lisp"
+  "/home/meit/crazyflie_ws/devel/share/common-lisp/ros/crazyflie_driver/msg/GenericLogData.lisp"
+  "/home/meit/crazyflie_ws/devel/share/common-lisp/ros/crazyflie_driver/msg/LogBlock.lisp"
+  "/home/meit/crazyflie_ws/devel/share/common-lisp/ros/crazyflie_driver/srv/AddCrazyflie.lisp"
+  "/home/meit/crazyflie_ws/devel/share/common-lisp/ros/crazyflie_driver/srv/UpdateParams.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

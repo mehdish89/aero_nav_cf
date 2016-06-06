@@ -14,11 +14,11 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/yifang/catkin_ws_test/src/apriltags_ros/apriltags/include"
-  "/home/yifang/catkin_ws_test/src/apriltags_ros/apriltags/include/AprilTags"
-  "/usr/include/eigen3"
   "/usr/local/include/opencv"
   "/usr/local/include"
+  "/home/meit/crazyflie_ws/src/apriltags_ros/apriltags/include"
+  "/home/meit/crazyflie_ws/src/apriltags_ros/apriltags/include/AprilTags"
+  "/usr/include/eigen3"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
