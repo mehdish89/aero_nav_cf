@@ -1,0 +1,8 @@
+prefix=/home/yifang/catkin_ws_test/devel
+
+Name: lab4
+Description: Description of lab4
+Version: 0.0.0
+Cflags: -I/home/yifang/catkin_ws_test/devel/include
+Libs: -L/home/yifang/catkin_ws_test/devel/lib 
+Requires: roscpp rospy rviz std_msgs message_runtime

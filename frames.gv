@@ -1,0 +1,9 @@
+digraph G {
+"camera" -> "tag_0"[label="Broadcaster: /apriltag_detector\nAverage rate: 27.189 Hz\nMost recent transform: 1460586705.005 ( 0.106 sec old)\nBuffer length: 4.965 sec\n"];
+"world" -> "camera"[label="Broadcaster: /tag_position\nAverage rate: 10.204 Hz\nMost recent transform: 1460586705.073 ( 0.038 sec old)\nBuffer length: 4.900 sec\n"];
+"camera" -> "tag_1"[label="Broadcaster: /apriltag_detector\nAverage rate: 25.578 Hz\nMost recent transform: 1460586705.005 ( 0.106 sec old)\nBuffer length: 4.965 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1460586705.111"[ shape=plaintext ] ;
+ }->"world";
+}

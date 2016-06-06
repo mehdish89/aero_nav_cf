@@ -1,0 +1,78 @@
+PIDs:
+  X:
+    kp: .3 # 40.0
+    kd: .02 # 20.0
+    ki: .02 # 4.0
+    minOutput: -100 # -10.0
+    maxOutput: 100 # 10.0
+    integratorMin: -0.1
+    integratorMax: 0.1
+  Y:
+    kp: .3 # 40.0
+    kd: .02 # 20.0
+    ki: .02 # 4.0
+    minOutput: -100 # -10.0
+    maxOutput: 100 # 10.0
+    integratorMin: -0.1
+    integratorMax: 0.1
+
+  Xp:
+    kp: .5 # 40.0
+    kd: .05 # 20.0
+    ki: .1 # 2.0
+    minOutput: -100 # -10.0
+    maxOutput: 100 # 10.0
+    integratorMin: -0.1
+    integratorMax: 0.1
+  Yp:
+    kp: .5 # 40.0
+    kd: .05 # 20.0
+    ki: .1 # 2.0
+    minOutput: -100 # -10.0
+    maxOutput: 100 # 10.0
+    integratorMin: -0.1
+    integratorMax: 0.1
+
+  #   Xp:
+  #   kp: .65 # 40.0
+  #   kd: .007 # 20.0
+  #   ki: .03 # 2.0
+  #   minOutput: -100 # -10.0
+  #   maxOutput: 100 # 10.0
+  #   integratorMin: -0.1
+  #   integratorMax: 0.1
+  # Yp:
+  #   kp: .65 # 40.0
+  #   kd: .007 # 20.0
+  #   ki: .03 # 2.0
+  #   minOutput: -100 # -10.0
+  #   maxOutput: 100 # 10.0
+  #   integratorMin: -0.1
+  #   integratorMax: 0.1
+
+  Z:
+    kp: 5000.0
+    kd: 20000.0
+    ki: 30.0
+    minOutput: 10000.0
+    maxOutput: 55000.0
+    integratorMin: -1000.0
+    integratorMax: 1000.0
+
+    # Z:
+    # kp: 9000.0
+    # kd: 100000.0
+    # ki: 30.0
+    # minOutput: 10000.0
+    # maxOutput: 55000.0
+    # integratorMin: -1000.0
+    # integratorMax: 1000.0
+
+  Yaw:
+    kp: .2 # -200.0
+    kd: .02 # -20.0
+    ki:  0 # 0.0
+    minOutput: -200.0
+    maxOutput: 200.0
+    integratorMin: 0.0
+    integratorMax: 0.0

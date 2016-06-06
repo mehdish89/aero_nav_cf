@@ -1,0 +1,15 @@
+(cl:defpackage lab5-srv
+  (:use )
+  (:export
+   "POSITION"
+   "<POSITION-REQUEST>"
+   "POSITION-REQUEST"
+   "<POSITION-RESPONSE>"
+   "POSITION-RESPONSE"
+   "MOVEBOT"
+   "<MOVEBOT-REQUEST>"
+   "MOVEBOT-REQUEST"
+   "<MOVEBOT-RESPONSE>"
+   "MOVEBOT-RESPONSE"
+  ))
+

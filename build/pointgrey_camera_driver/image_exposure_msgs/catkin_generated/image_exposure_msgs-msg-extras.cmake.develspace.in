@@ -1,0 +1,2 @@
+set(image_exposure_msgs_MESSAGE_FILES "/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ExposureSequence.msg;/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/ImageExposureStatistics.msg;/home/yifang/catkin_ws_test/src/pointgrey_camera_driver/image_exposure_msgs/msg/SequenceExposureStatistics.msg")
+set(image_exposure_msgs_SERVICE_FILES "")

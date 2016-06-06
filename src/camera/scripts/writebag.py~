@@ -1,0 +1,16 @@
+#!/usr/bin/env python  
+import rosbag
+
+bag = rosbag.Bag('data.bag', 'w')
+
+try:
+    str = String()
+    str.data = 'foo'
+
+    i = Int32()
+    i.data = 42
+
+    bag.write('chatter', str)
+    bag.write('numbers', i)
+finally:
+    bag.close()

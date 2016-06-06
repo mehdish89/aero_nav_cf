@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yifang/catkin_ws_test/src/camera/src/model_translate.cpp
+ros/ros.h
+-
+gazebo_msgs/ModelStates.h
+-
+apriltags_ros/AprilTagDetectionArray.h
+-
+tf/transform_broadcaster.h
+-
+tf/transform_listener.h
+-
+
