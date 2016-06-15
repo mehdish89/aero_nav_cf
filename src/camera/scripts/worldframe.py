@@ -136,6 +136,8 @@ def pub_base_link(msg, name):
 
     global yaw_diff, imu_yaw
 
+    global yaw
+
 
     x = msg.pose.position.x
     y = msg.pose.position.y
@@ -207,12 +209,13 @@ def callback_stab(msg):
     pitch = -msg.pose.position.y*math.pi/180.0
     imu_yaw = msg.pose.position.z*math.pi/180.0
     global yaw
-    yaw = (imu_yaw + yaw_diff)%(2*math.pi)
+    # yaw = (imu_yaw + yaw_diff)%(2*math.pi)
 
     
     # roll = msg.linear_acceleration.x*math.pi/180.0
     # pitch = -msg.linear_acceleration.y*math.pi/180.0
     # imu_yaw = msg.linear_acceleration.z*math.pi/180.0
+
 
 
 # imu callback
@@ -240,7 +243,6 @@ def callback1(msg):
     ay = -msg.linear_acceleration.y
     az = -msg.linear_acceleration.z
 
-
     global bl
 
     msg = PoseStamped()
@@ -255,6 +257,7 @@ def callback1(msg):
     msg.pose.position.y = ay * C
     msg.pose.position.z = az * C
 
+
     try:        
         msg = bl.transformPose('world', msg)
     except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException, Exception) as e:
@@ -264,6 +267,23 @@ def callback1(msg):
     ax = msg.pose.position.x / C
     ay = msg.pose.position.y / C
     az = msg.pose.position.z * 0 / C
+    # az = msg.pose.position.z / C
+
+    # rospy.logerr(ax)
+    # rospy.logerr(ay)
+    # rospy.logerr(ay)
+    if ax < 0.3 and ax>-0.3:
+        ax = 0
+    if ay < 0.3 and ay>-0.3:
+        ay = 0
+    # if az < 0.3:
+    #     az = 0
+    acc_world = Imu()
+    acc_world.header.stamp = stamp
+    acc_world.linear_acceleration.x = ax
+    acc_world.linear_acceleration.y = ay
+    acc_world.linear_acceleration.z = az
+    pub_acc.publish(acc_world)
 
     # rospy.logerr("ESTIMATED  ax:{0:3f}  ay:{1:3f}  az:{2:3f}".format(ax,ay,az))    
     
@@ -364,6 +384,7 @@ if __name__ == '__main__':
         vel = rospy.Publisher('/geometry_msgs/Twist', Twist, queue_size=10) # velocity
         odom = rospy.Publisher('/crazyflie/odom', nav_msgs.msg.Odometry, queue_size = 1)
         pub = rospy.Publisher('/crazyflie/pid', PoseStamped, queue_size = 1)
+        pub_acc = rospy.Publisher('/world_acc',Imu,queue_size = 1)
     except Exception as e:
         rospy.logerr("error({0}):".format(e))
     rospy.spin()

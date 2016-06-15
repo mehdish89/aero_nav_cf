@@ -4,9 +4,11 @@
   <!--arg name="frame" default="/tag_1" /-->
   <arg name="frame" default="/crazyflie/base_link" />
   <!--arg name="joy_dev" default="/dev/input/js0" /-->
-  <arg name="x" default="-0.62" />
-  <arg name="y" default="0.54" />
-  <arg name="z" default="0.3" />
+  <arg name="x" default="-0.31" />
+  <arg name="y" default="0.27" />
+  <arg name="z" default="0.15" />
+
+  <rosparam command="load" file="$(find crazyflie_controller)/config/crazyflie2.yaml" />
 
   <include file="$(find crazyflie_driver)/launch/crazyflie_server.launch">
   </include>
@@ -71,7 +73,7 @@
       <param name="width" value="640" />
       <param name="height" value="480" />
       <param name="format" value="yuyv" />
-      <param name="fps" value="30" />
+      <param name="fps" value="60" />
       <param name="auto_exposure" value="0" />
       <param name="exposure_absolute" value="75" />
       <param name="exposure_auto_priority" value="0" />
@@ -105,7 +107,7 @@ args="camera_info:=/creative/camera_info image_rect:=/image1_1" launch-prefix="t
 <rosparam param="tag_descriptions">
 [
 {id: 0, size: 0.039},
-{id: 1, size: 0.077},
+{id: 1, size: 0.101},
 {id: 2, size: 0.162, frame_id: goal},
 
 ]
@@ -122,7 +124,7 @@ args="camera_info:=/creative/camera_info image_rect:=/image1_2" launch-prefix="t
 <rosparam param="tag_descriptions">
 [
 {id: 0, size: 0.039},
-{id: 1, size: 0.077},
+{id: 1, size: 0.101},
 {id: 2, size: 0.162, frame_id: goal},
 
 ]
@@ -140,7 +142,7 @@ args="camera_info:=/creative/camera_info image_rect:=/image1_3" launch-prefix="t
 <rosparam param="tag_descriptions">
 [
 {id: 0, size: 0.039},
-{id: 1, size: 0.077},
+{id: 1, size: 0.101},
 {id: 2, size: 0.162, frame_id: goal},
 
 ]

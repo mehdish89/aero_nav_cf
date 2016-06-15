@@ -316,8 +316,8 @@ private:
                 // msg1.linear.x  =  -m_pidX.update(0, 180*pitch1/3.14) - m_pidXp.update(0, x_sign * log(x_sign * x_goal * 100 + 1)) * 10;
                 // msg1.linear.y  =  -m_pidY.update(0, 180*roll1/3.14) + m_pidYp.update(0, y_sign * log(y_sign * y_goal * 100 + 1)) * 10;
 
-                msg1.linear.x  =  -m_pidX.update(0, 180*pitch1/3.14) + m_pidXp.update(0, x_sign * (x_sign * x_goal )) * 300;
-                msg1.linear.y  =  -m_pidY.update(0, 180*roll1/3.14)   - m_pidYp.update(0, y_sign * (y_sign * y_goal)) * 300;
+                msg1.linear.x  =  -m_pidX.update(0, 180*pitch1/3.14)/2 + m_pidXp.update(0, x_sign * (x_sign * x_goal )) * 900;
+                msg1.linear.y  =  -m_pidY.update(0, 180*roll1/3.14)/2 - m_pidYp.update(0, y_sign * (y_sign * y_goal)) * 900;
 
                 /*
 
@@ -330,7 +330,7 @@ private:
                 }
                 */
 
-                msg1.linear.z  = 37000; //29000 + m_pidZ.update(z_goal, z);//40500; // 0;//35000; //41000;//38000;//
+                msg1.linear.z  = 39000;// + m_pidZ.update(-z_goal, -z);//40500; // 0;//35000; //41000;//38000;//
 
                 msg1.angular.z = 0;//m_pidYaw.update(-2.20, 180*yaw1/3.14); 
 
