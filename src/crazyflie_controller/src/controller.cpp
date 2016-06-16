@@ -27,63 +27,69 @@ public:
         , pub_targetDrone()
         , m_listener()
         , m_pidX(
-            get(n, "PIDs/X/kp"),
-            get(n, "PIDs/X/kd"),
-            get(n, "PIDs/X/ki"),
-            get(n, "PIDs/X/minOutput"),
-            get(n, "PIDs/X/maxOutput"),
-            get(n, "PIDs/X/integratorMin"),
-            get(n, "PIDs/X/integratorMax"),
-            "x")
+            "PIDs/X/kp",
+            "PIDs/X/kd",
+            "PIDs/X/ki",
+            "PIDs/X/minOutput",
+            "PIDs/X/maxOutput",
+            "PIDs/X/integratorMin",
+            "PIDs/X/integratorMax",
+            "X", 
+            n)
 
         , m_pidY(
-            get(n, "PIDs/Y/kp"),
-            get(n, "PIDs/Y/kd"),
-            get(n, "PIDs/Y/ki"),
-            get(n, "PIDs/Y/minOutput"),
-            get(n, "PIDs/Y/maxOutput"),
-            get(n, "PIDs/Y/integratorMin"),
-            get(n, "PIDs/Y/integratorMax"),
-            "y")
+            "PIDs/Y/kp",
+            "PIDs/Y/kd",
+            "PIDs/Y/ki",
+            "PIDs/Y/minOutput",
+            "PIDs/Y/maxOutput",
+            "PIDs/Y/integratorMin",
+            "PIDs/Y/integratorMax",
+            "Y", 
+            n)
         , m_pidZ(
-            get(n, "PIDs/Z/kp"),
-            get(n, "PIDs/Z/kd"),
-            get(n, "PIDs/Z/ki"),
-            get(n, "PIDs/Z/minOutput"),
-            get(n, "PIDs/Z/maxOutput"),
-            get(n, "PIDs/Z/integratorMin"),
-            get(n, "PIDs/Z/integratorMax"),
-            "z")
+            "PIDs/Z/kp",
+            "PIDs/Z/kd",
+            "PIDs/Z/ki",
+            "PIDs/Z/minOutput",
+            "PIDs/Z/maxOutput",
+            "PIDs/Z/integratorMin",
+            "PIDs/Z/integratorMax",
+            "Z", 
+            n)
 
         , m_pidXp(
-            get(n, "PIDs/Xp/kp"),
-            get(n, "PIDs/Xp/kd"),
-            get(n, "PIDs/Xp/ki"),
-            get(n, "PIDs/Xp/minOutput"),
-            get(n, "PIDs/Xp/maxOutput"),
-            get(n, "PIDs/Xp/integratorMin"),
-            get(n, "PIDs/Xp/integratorMax"),
-            "Xp")
+            "PIDs/Xp/kp",
+            "PIDs/Xp/kd",
+            "PIDs/Xp/ki",
+            "PIDs/Xp/minOutput",
+            "PIDs/Xp/maxOutput",
+            "PIDs/Xp/integratorMin",
+            "PIDs/Xp/integratorMax",
+            "Xp", 
+            n)
 
         , m_pidYp(
-            get(n, "PIDs/Yp/kp"),
-            get(n, "PIDs/Yp/kd"),
-            get(n, "PIDs/Yp/ki"),
-            get(n, "PIDs/Yp/minOutput"),
-            get(n, "PIDs/Yp/maxOutput"),
-            get(n, "PIDs/Yp/integratorMin"),
-            get(n, "PIDs/Yp/integratorMax"),
-            "Yp")
+            "PIDs/Yp/kp",
+            "PIDs/Yp/kd",
+            "PIDs/Yp/ki",
+            "PIDs/Yp/minOutput",
+            "PIDs/Yp/maxOutput",
+            "PIDs/Yp/integratorMin",
+            "PIDs/Yp/integratorMax",
+            "Yp", 
+            n)
 
         , m_pidYaw(
-            get(n, "PIDs/Yaw/kp"),
-            get(n, "PIDs/Yaw/kd"),
-            get(n, "PIDs/Yaw/ki"),
-            get(n, "PIDs/Yaw/minOutput"),
-            get(n, "PIDs/Yaw/maxOutput"),
-            get(n, "PIDs/Yaw/integratorMin"),
-            get(n, "PIDs/Yaw/integratorMax"),
-            "yaw")
+            "PIDs/Yaw/kp",
+            "PIDs/Yaw/kd",
+            "PIDs/Yaw/ki",
+            "PIDs/Yaw/minOutput",
+            "PIDs/Yaw/maxOutput",
+            "PIDs/Yaw/integratorMin",
+            "PIDs/Yaw/integratorMax",
+            "Yaw", 
+            n)
         , m_state(Idle)
         , m_goal()
         , m_vel()

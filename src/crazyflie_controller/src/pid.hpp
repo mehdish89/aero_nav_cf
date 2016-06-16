@@ -2,28 +2,43 @@
 
 #include <ros/ros.h>
 
+
+
 class PID
 {
+
+    double get(
+        const ros::NodeHandle& n,
+        const std::string& name) {
+        double value;
+        n.getParam(name, value);
+        return value;
+    }
 public:
     PID(
-        float kp,
-        float kd,
-        float ki,
-        float minOutput,
-        float maxOutput,
-        float integratorMin,
-        float integratorMax,
-        const std::string& name)
-        : m_kp(kp)
-        , m_kd(kd)
-        , m_ki(ki)
-        , m_minOutput(minOutput)
-        , m_maxOutput(maxOutput)
-        , m_integratorMin(integratorMin)
-        , m_integratorMax(integratorMax)
+        const std::string& kp,
+        const std::string& kd,
+        const std::string& ki,
+        const std::string& minOutput,
+        const std::string& maxOutput,
+        const std::string& integratorMin,
+        const std::string& integratorMax,
+        const std::string& name,
+        ros::NodeHandle nh
+        )
+        : 
+          m_kp(0)
+        , m_kd(0)
+        , m_ki(0)
+        , m_minOutput(0)
+        , m_maxOutput(0)
+        , m_integratorMin(0)
+        , m_integratorMax(0)
         , m_integral(0)
         , m_previousError(0)
         , m_previousTime(ros::Time::now())
+        , m_name(name)
+        , m_nh(nh)
     {
     }
 
@@ -46,6 +61,15 @@ public:
 
     float update(float value, float targetValue)
     {
+
+        m_kp = get(m_nh, "PIDs/" + m_name + "/kp");
+        m_kd = get(m_nh, "PIDs/" + m_name + "/kd");
+        m_ki = get(m_nh, "PIDs/" + m_name + "/ki");
+        m_minOutput = get(m_nh, "PIDs/" + m_name + "/minOutput");
+        m_maxOutput = get(m_nh, "PIDs/" + m_name + "/maxOutput");
+        m_integratorMin = get(m_nh, "PIDs/" + m_name + "/integratorMin");
+        m_integratorMax = get(m_nh, "PIDs/" + m_name + "/integratorMax");
+        
         ros::Time time = ros::Time::now();
         float dt = time.toSec() - m_previousTime.toSec();
         float error = targetValue - value;
@@ -80,4 +104,6 @@ private:
     float m_integral;
     float m_previousError;
     ros::Time m_previousTime;
+    ros::NodeHandle m_nh;
+    std::string m_name;
 };
