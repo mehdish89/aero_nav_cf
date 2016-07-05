@@ -367,8 +367,8 @@ private:
                 ros::param::get("/crazyflie/controller/PIDs/Z/kd", x_drift);
                 ros::param::get("/crazyflie/controller/PIDs/Z/ki", y_drift);
 
-                msg1.linear.x  =  -m_pidX.update(err_x + x_drift, 180*pitch1/3.14); 
-                msg1.linear.y  =  -m_pidY.update(err_y + y_drift, 180*roll1/3.14);
+                msg1.linear.x  =  err_x; //-m_pidX.update(err_x + x_drift, 180*pitch1/3.14); 
+                msg1.linear.y  =  err_y; //-m_pidY.update(err_y + y_drift, 180*roll1/3.14);
 
                 /*
 
