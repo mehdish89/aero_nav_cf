@@ -20,6 +20,7 @@ class Controller
 public:
 
     Controller(
+        
         const std::string& frame,
         const ros::NodeHandle& n)
         : m_frame(frame)
@@ -97,6 +98,10 @@ public:
         , m_serviceTakeoff()
         , m_serviceLand()
         , m_thrust(0)
+        , count(0)
+        , x_drift(0)
+        , y_drift(0)
+        , takeoff_time(0)
     {
         ros::NodeHandle nh;
         m_pubNav = nh.advertise<geometry_msgs::Twist>("cmd_vel", 1);
@@ -176,6 +181,11 @@ private:
         m_pidYaw.reset();
     }
 
+    // static int count;
+    // static double x_drift;
+    // static double y_drift;
+    // static ros::Time takeoff_time;
+
     void iteration(const ros::TimerEvent& e)
     {
         float dt = e.current_real.toSec() - e.last_real.toSec();
@@ -186,7 +196,7 @@ private:
         {
         case TakingOff:
             {
-            	ROS_INFO("=======================================this is takingoff===============================");
+            	// ROS_INFO("=======================================this is takingoff===============================");
                 tf::StampedTransform transform;
                 m_listener.lookupTransform("/world", m_frame, ros::Time(0), transform);
                 // m_listener.lookupTransform("/tag_1", m_frame, ros::Time(0), transform);
@@ -206,6 +216,10 @@ private:
                     //ROS_INFO_STREAM(m_thrust);
                 }
                 
+                takeoff_time = ros::Time::now();
+                // count = 0;
+                // x_drift = 0;
+                // y_drift = 0;
 
             }
             break;
@@ -220,12 +234,12 @@ private:
                     geometry_msgs::Twist msg;
                     m_pubNav.publish(msg);
                 }
-                ROS_INFO("=======================================this is landing===============================");
+                // ROS_INFO("=======================================this is landing===============================");
             }
             // intentional fall-thru
         case Automatic:
             {
-            	ROS_INFO("=======================================this is automatic===============================");
+            	// ROS_INFO("=======================================this is automatic===============================");
                 tf::StampedTransform transform;
                 m_listener.lookupTransform("/world", m_frame, ros::Time(0), transform);
                 // m_listener.lookupTransform("/tag_1", m_frame, ros::Time(0), transform);
@@ -293,11 +307,11 @@ private:
                 double x_goal = targetDrone.pose.position.x; //transform.getOrigin().getX();//0.16;
                 double y_goal = targetDrone.pose.position.y; //transform.getOrigin().getY();
 
-                ROS_INFO("x_goal");
-                ROS_INFO_STREAM(x_goal);
+                // ROS_INFO("x_goal");
+                // ROS_INFO_STREAM(x_goal);
 
-                ROS_INFO("y_goal");
-                ROS_INFO_STREAM(y_goal);
+                // ROS_INFO("y_goal");
+                // ROS_INFO_STREAM(y_goal);
 
                 double z_goal = 0.30;
                 /*ROS_INFO("x");
@@ -309,12 +323,25 @@ private:
                 double x_sign = (x_goal>0)*2-1;
                 double y_sign = (y_goal>0)*2-1;
 
+                x_drift = x_drift * count + x_goal;
+                y_drift = y_drift * count + y_goal;
 
-                // ROS_INFO("x_sign");
-                // ROS_INFO_STREAM(log(x_sign * x_goal));
+                count++;
 
-                // ROS_INFO("y_sign");
-                // ROS_INFO_STREAM(log(y_sign * y_goal));
+                x_drift/=count;
+                y_drift/=count;
+
+                ros::Duration dur = ros::Time::now() - takeoff_time;
+                double delta_t = dur.toSec();
+
+                double x_dvel = x_drift/delta_t;
+                double y_dvel = y_drift/delta_t;
+
+                // ROS_INFO("x_drift_vel");
+                // ROS_INFO_STREAM(x_dvel);
+
+                // ROS_INFO("y_drift_vel");
+                // ROS_INFO_STREAM(y_dvel);
 
                 double vx = m_vel.linear.x;
                 double vy = m_vel.linear.y;
@@ -322,8 +349,26 @@ private:
                 // msg1.linear.x  =  -m_pidX.update(0, 180*pitch1/3.14) - m_pidXp.update(0, x_sign * log(x_sign * x_goal * 100 + 1)) * 10;
                 // msg1.linear.y  =  -m_pidY.update(0, 180*roll1/3.14) + m_pidYp.update(0, y_sign * log(y_sign * y_goal * 100 + 1)) * 10;
 
-                msg1.linear.x  =  -m_pidX.update(0, 180*pitch1/3.14)/2 + m_pidXp.update(0, x_sign * (x_sign * x_goal )) * 900;
-                msg1.linear.y  =  -m_pidY.update(0, 180*roll1/3.14)/2 - m_pidYp.update(0, y_sign * (y_sign * y_goal)) * 900;
+                // msg1.linear.x  =  -m_pidX.update(0, 180*pitch1/3.14)/2 + m_pidXp.update(0, x_sign * (x_sign * x_goal )) * 900;
+                // msg1.linear.y  =  -m_pidY.update(0, 180*roll1/3.14)/2 - m_pidYp.update(0, y_sign * (y_sign * y_goal)) * 900;
+
+
+
+
+
+                double err_x =  m_pidXp.update(0, x_sign * (x_sign * x_goal )) * 180 ;
+                double err_y = -m_pidYp.update(0, y_sign * (y_sign * y_goal)) * 180  ;
+
+                // ROS_INFO("err_x");
+                // ROS_INFO_STREAM(err_x);
+                // ROS_INFO("err_y");
+                // ROS_INFO_STREAM(err_y);
+                double x_drift, y_drift;
+                ros::param::get("/crazyflie/controller/PIDs/Z/kd", x_drift);
+                ros::param::get("/crazyflie/controller/PIDs/Z/ki", y_drift);
+
+                msg1.linear.x  =  -m_pidX.update(err_x + x_drift, 180*pitch1/3.14); 
+                msg1.linear.y  =  -m_pidY.update(err_y + y_drift, 180*roll1/3.14);
 
                 /*
 
@@ -335,8 +380,15 @@ private:
                     msg1.linear.y  =  -m_pidY.update(0, 180*roll1/3.14);
                 }
                 */
+                double thrust;
 
-                msg1.linear.z  = 39000;// + m_pidZ.update(-z_goal, -z);//40500; // 0;//35000; //41000;//38000;//
+                ros::param::get("/crazyflie/controller/thrust", thrust);
+                msg1.linear.z = thrust;
+
+                // ROS_INFO_STREAM(thrust);
+
+
+                // msg1.linear.z  = 47000;// + m_pidZ.update(-z_goal, -z);//40500; // 0;//35000; //41000;//38000;//
 
                 msg1.angular.z = 0;//m_pidYaw.update(-2.20, 180*yaw1/3.14); 
 
@@ -441,10 +493,16 @@ private:
     geometry_msgs::PoseStamped m_goal,m_po;
     geometry_msgs::Twist m_vel;
 
+    int count;
+    double x_drift;
+    double y_drift;
+    ros::Time takeoff_time;
+
     ros::Subscriber m_subscribeGoal,m_PosePid, m_subVel;
     ros::ServiceServer m_serviceTakeoff;
     ros::ServiceServer m_serviceLand;
     float m_thrust;
+
 };
 
 int main(int argc, char **argv)

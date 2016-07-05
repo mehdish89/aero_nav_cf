@@ -28,7 +28,7 @@
       <param name="auto_gain" value="0" />
       <param name="horizontal_flip" value="0" />
       <param name="vertical_flip" value="0" />
-      <param name="camera_info_url" value="file://$(find camera)/launch/ps3eye.yaml"/>
+      <!--param name="camera_info_url" value="file://$(find camera)/launch/ps3eye.yaml"/-->
     </node>
 </launch>
 
