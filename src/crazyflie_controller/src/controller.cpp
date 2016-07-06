@@ -356,8 +356,12 @@ private:
 
 
 
-                double err_x =  m_pidXp.update(0, x_sign * (x_sign * x_goal )) * 180 ;
-                double err_y = -m_pidYp.update(0, y_sign * (y_sign * y_goal)) * 180  ;
+                // double err_x =  m_pidXp.update(0, x_sign * (x_sign * x_goal )) * 180 ;
+                // double err_y = -m_pidYp.update(0, y_sign * (y_sign * y_goal)) * 180  ;
+
+                double err_x  =  + m_pidXp.update(0, x_sign * log(x_sign * x_goal * 100 + 1)) * 10;
+                double err_y  =  - m_pidYp.update(0, y_sign * log(y_sign * y_goal * 100 + 1)) * 10;
+
 
                 // ROS_INFO("err_x");
                 // ROS_INFO_STREAM(err_x);
@@ -383,7 +387,7 @@ private:
                 double thrust;
 
                 ros::param::get("/crazyflie/controller/thrust", thrust);
-                msg1.linear.z = thrust;
+                msg1.linear.z = thrust + m_pidZ.update(-z_goal, -z);
 
                 // ROS_INFO_STREAM(thrust);
 
