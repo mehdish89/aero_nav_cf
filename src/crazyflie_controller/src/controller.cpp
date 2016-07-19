@@ -367,9 +367,10 @@ private:
                 // ROS_INFO_STREAM(err_x);
                 // ROS_INFO("err_y");
                 // ROS_INFO_STREAM(err_y);
-                double x_drift, y_drift;
-                ros::param::get("/crazyflie/controller/PIDs/Z/kd", x_drift);
-                ros::param::get("/crazyflie/controller/PIDs/Z/ki", y_drift);
+
+                // double x_drift, y_drift;
+                // ros::param::get("/crazyflie/controller/PIDs/Z/kd", x_drift);
+                // ros::param::get("/crazyflie/controller/PIDs/Z/ki", y_drift);
 
                 msg1.linear.x  =  err_x; //-m_pidX.update(err_x + x_drift, 180*pitch1/3.14); 
                 msg1.linear.y  =  err_y; //-m_pidY.update(err_y + y_drift, 180*roll1/3.14);
@@ -387,7 +388,8 @@ private:
                 double thrust;
 
                 ros::param::get("/crazyflie/controller/thrust", thrust);
-                msg1.linear.z = thrust + m_pidZ.update(-z_goal, -z);
+                msg1.linear.z = thrust + m_pidZ.update(0.3, -z);
+                // msg1.linear.z= thrust + m_pidZ.update(0.3, 0);
 
                 // ROS_INFO_STREAM(thrust);
 
